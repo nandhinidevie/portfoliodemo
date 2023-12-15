@@ -1,0 +1,48 @@
+-- import: fastn
+
+-- fastn.package: nandhinidevie.github.io/portfolio
+favicon: /-/saurabh-lohiya.github.io/portfolio/favicon.ico
+
+-- fastn.dependency: fastn-community.github.io/site-doc as site-doc
+-- fastn.dependency: fastn-community.github.io/code-block as cb
+-- fastn.dependency: fastn-community.github.io/doc-site as doc-site
+-- fastn.dependency: fastn-community.github.io/footer
+-- fastn.dependency: fastn-community.github.io/lato-typography
+-- fastn.dependency: fastn-community.github.io/forest-cs
+-- fastn.dependency: saurabh-lohiya.github.io/portfolio as pf
+-- fastn.dependency: fastn-community.github.io/bling
+
+-- fastn.auto-import: saurabh-lohiya.github.io/portfolio/FASTN/ds
+-- fastn.auto-import: saurabh-lohiya.github.io/portfolio/common
+-- fastn.auto-import: nandhinidevie.github.io/portfolio as self
+-- fastn.auto-import: nandhinidevie.github.io/portfolio/common as self-common
+-- fastn.auto-import: saurabh-lohiya.github.io/portfolio/assets
+-- fastn.auto-import: nandhinidevie.github.io/portfolio/assets as self-assets
+-- fastn.auto-import: site-doc
+-- fastn.auto-import: doc-site
+-- fastn.auto-import: cb
+-- fastn.auto-import: pf
+
+-- fastn.sitemap:
+
+# Home: index.html
+icon: assets/home.svg
+
+# About Me: /#about-me
+icon: assets/info.svg
+
+;; # Services: /#services
+;; icon: assets/service.png
+
+# My Clients: /#clients
+icon: assets/heart.svg
+
+# Portfolio: /#latest-works
+icon: assets/briefcase.svg
+
+# Blog: /#blogs
+icon: assets/blog.png
+
+# Contact: /#contact
+icon: assets/contact.png
+

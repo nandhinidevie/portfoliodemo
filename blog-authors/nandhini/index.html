@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <base href="/portfoliodemo/">
+    <meta content="fastn" name="generator">
+    
+<link rel="shortcut icon" href="/-/saurabh-lohiya.github.io/portfolio/favicon.ico" type="image/x-icon">
+    
+    <script>
+        let __fastn_package_name__ = "nandhinidevie.github.io/portfolio";
+
+    </script>
+
+    
+                <script src="markdown-24E09EFC0C2B9A11DEA9AC71888EB3A1E85864FA7D9C95A3EB5075A0E0F49A5F.js"></script>
+                <script src="prism-8FE3A42AD547E2DBBC9FE16BA059F8F1870D613AD0C5B0B013D6205B72A62BAF.js"></script>
+                <script src="default-84FDE6BE40C37A95F84BC7E163173A8613303A2373A6683C29747C2E90B87336.js"></script>
+                <link rel="stylesheet" href="prism-73F718B9234C00C5C14AB6A11BF239A103F0B0F93B69CD55CB5C6530501182EB.css">
+                
+            
+    
+
+    <style>
+       /* http://meyerweb.com/eric/tools/css/reset/
+          v2.0 | 20110126
+          License: none (public domain)
+       */
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+!* HTML5 display-role reset for older browsers *!
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}*/
+
+*, :after, :before {
+    /*box-sizing: inherit;*/
+    box-sizing: border-box;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    height: auto;
+    width: auto;
+}
+
+*, pre, div {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    outline: none;
+}
+
+
+body, ol ol, ol ul, ul ol, ul ul {
+    margin:0
+}
+pre, table{
+    overflow:auto
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+input {
+    vertical-align: middle;
+}
+pre {
+    white-space: break-spaces;
+    word-wrap: break-word;
+}
+html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+iframe {
+    border: 0;
+    color-scheme: auto;
+}
+
+pre code {
+    /*
+    This break show-line-number in `ftd.code`
+    overflow-x: auto;
+    */
+    display: block;
+    padding: 0 1em !important;
+}
+
+/* Common styles  */
+.ft_common{
+    text-decoration: none;
+    box-sizing: border-box;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-style: solid;
+    height: auto;
+    width: auto;
+}
+
+/* Common container attributes */
+.ft_row, .ft_column {
+    display: flex;
+    align-items: start;
+    justify-content: start
+}
+
+.ft_full_size {
+    width: 100%;
+    height: 100%;
+}
+
+.ft_row {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.ft_column {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.ft_row {
+    flex-direction: row;
+}
+
+.ft_column {
+    flex-direction: column;
+}
+
+.ft_md ul,
+.ft_md ol{
+    margin: 10px 0;
+}
+
+.ft_md ul ul,
+.ft_md ul ol,
+.ft_md ol ul,
+.ft_md ol ol {
+    margin: 0;
+}
+
+.ft_md ul li,
+.ft_md ol li,
+.ft_md ul ol li .ft_md ul ul li .ft_md ol ul li .ft_md ol ol li {
+    position: relative;
+    padding-left: 32px;
+    margin: 4px 0;
+}
+
+.ft_md ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ft_md ol {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: item;
+}
+
+.ft_md ol li:before,
+.ft_md ol ol li:before,
+.ft_md ul ol li:before {
+    content: counter(item);
+    counter-increment: item;
+    font-size: 11px;
+    line-height: 10px;
+    text-align: center;
+    padding: 4px 0;
+    height: 10px;
+    width: 18px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.ft_md ul li::before,
+.ft_md ul ul li::before,
+.ft_md ol ul li::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 8px;
+    top: 10px;
+    border-radius: 50%;
+    background: #c1c8ce;
+}
+
+ul, ol {
+    /* Added padding to the left to move the ol number/ ul bullet to the right */
+    padding-left: 20px;
+}
+
+a {
+    color: #2952a3;
+}
+
+a:visited {
+    color: #856ab9;
+}
+
+a:hover {
+    color: #24478f;
+}
+
+.ft_md a {
+    text-decoration: none;
+}
+
+.ft_md a:visited {
+    text-decoration: none;
+}
+
+.ft_md a:hover {
+    text-decoration: none;
+}
+
+code {
+    padding: 0.1rem 0.25rem;
+    border-radius: 4px;
+    background-color: #0000000d;
+}
+
+.ft_md blockquote {
+    padding: 0.25rem 1rem;
+    margin: 1rem 0;
+    border-radius: 3px;
+}
+
+.ft_md blockquote > blockquote {
+    margin: 0;
+}
+
+
+body.dark code {
+    padding: 0.1rem 0.25rem;
+    border-radius: 4px;
+    background-color: #ffffff1f;
+}
+
+
+body.dark a {
+    color: #6498ff
+}
+
+body.dark a:visited {
+    color: #b793fb;
+}
+
+
+p {
+    margin-block-end: 1em;
+}
+
+h1:only-child {
+    margin-block-end: 0.67em
+}
+
+table, td, th {
+  border: 1px solid;
+}
+
+th {
+    padding: 6px;
+}
+
+td {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+    </style>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<body data-id="1"><div data-id="2" class="ft_column __w-1 __h-2"><div data-id="3" class="ft_column __w-3 __h-4"><comment data-id="4"></comment><comment data-id="5"></comment><div data-id="7" class="ft_column __w-5"><div data-id="8" class="ft_column __w-6 __z-7 __pos-8"><comment data-id="9"></comment><div data-id="11" class="ft_column __w-9 __z-10 __bgc-11"><div data-id="12" class="ft_row __w-12 __p-13 __jc-14 __ali-15 __jc-16"><a data-id="13" href="/" class="__rl-17 __p-18 __c-19 __bgc-20 __ta-21 __fwt-22">Tony</a><img data-id="14" src="-/saurabh-lohiya.github.io/portfolio/assets/hamburger-menu.svg" class="__cur-23 __w-24 __h-25"></img></div></div><comment data-id="15"></comment><comment data-id="16"></comment><comment data-id="17"></comment></div><div data-id="18" class="ft_column __w-26 __mt-27"><div data-id="19" class="ft_column"><div data-id="20" class="ft_column __w-28 __c-30 __g-31"><comment data-id="21"></comment><comment data-id="22"></comment><div data-id="24" class="ft_column __w-32 __mt-33 __mb-34 __c-35 __jc-36 __ali-37 __g-38"><img data-id="25" src="-/nandhinidevie.github.io/portfolio/assets/profile-picture.jpeg" class="__w-39 __h-40 __br-41"></img><div data-id="26" class="ft_column __jc-42 __ali-43"><div data-id="27" class="__rl-44 __c-45">Nandhini</div><div data-id="28" class="__rl-46">Copywriter</div><div data-id="29" class="__rl-47">Copy for Impact</div></div><div data-id="30" class="__rl-48">Freelance copywriter for sustainable businesses.</div></div></div></div></div></div></div></div></body><style id="styles">
+    .__w-1 { width: 100%; }
+	.__h-2 { height: 100%; }
+	.__w-3 { width: 100%; }
+	.__h-4 { height: 100%; }
+	.__w-5 { width: 100%; }
+	.__w-6 { width: 100%; }
+	.__z-7 { z-index: 100; }
+	.__pos-8 { position: sticky; }
+	.__w-9 { width: 100%; }
+	.__z-10 { z-index: 999; }
+	.__bgc-11 { background-color: #FFFFFF; }
+	body.dark .__bgc-11 { background-color: #000000; }
+	.__w-12 { width: 100%; }
+	.__p-13 { padding: 16px; }
+	.__jc-14 { justify-content: center; }
+	.__ali-15 { align-items: center; }
+	.__jc-16 { justify-content: space-between; }
+	.__rl-17 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 30px; }
+	body.mobile .__rl-17 {  font-family: sans-serif; font-size: 16px; font-weight: 400; line-height: 24px; }
+	.__p-18 { padding: 12px; }
+	.__c-19 { color: #333333 !important; }
+	body.dark .__c-19 { color: #FFFFFF !important; }
+	.__c-19:visited { color: #333333 !important; }
+	body.dark  .__c-19:visited { color: #FFFFFF !important; }
+	.__bgc-20 { background-color: #fbf3dc; }
+	body.dark .__bgc-20 { background-color: #2b2b2b; }
+	.__ta-21 { text-align: center; }
+	.__fwt-22 { font-weight: 700; }
+	.__cur-23 { cursor: pointer; }
+	.__w-24 { width: 32px; }
+	.__h-25 { height: 32px; }
+	.__w-26 { width: 100%; }
+	.__mt-27 { margin-top: 35px; }
+	.__w-28 { width: 100%; }
+	.__c-30 { color: #707070 !important; }
+	body.dark .__c-30 { color: #D9D9D9 !important; }
+	.__c-30:visited { color: #707070 !important; }
+	body.dark  .__c-30:visited { color: #D9D9D9 !important; }
+	.__g-31 { gap: 24px; }
+	.__w-32 { width: 100%; }
+	.__mt-33 { margin-top: 12px; }
+	.__mb-34 { margin-bottom: 12px; }
+	.__c-35 { color: #707070 !important; }
+	body.dark .__c-35 { color: #D9D9D9 !important; }
+	.__c-35:visited { color: #707070 !important; }
+	body.dark  .__c-35:visited { color: #D9D9D9 !important; }
+	.__jc-36 { justify-content: center; }
+	.__ali-37 { align-items: center; }
+	.__g-38 { gap: 16px; }
+	.__w-39 { width: 132px; }
+	.__h-40 { height: 132px; }
+	.__br-41 { border-radius: 500px; }
+	.__jc-42 { justify-content: center; }
+	.__ali-43 { align-items: center; }
+	.__rl-44 {  font-family: sans-serif; font-size: 24px; font-weight: 400; line-height: 31px; }
+	body.mobile .__rl-44 {  font-family: sans-serif; font-size: 22px; font-weight: 400; line-height: 29px; }
+	.__c-45 { color: #333333 !important; }
+	body.dark .__c-45 { color: #FFFFFF !important; }
+	.__c-45:visited { color: #333333 !important; }
+	body.dark  .__c-45:visited { color: #FFFFFF !important; }
+	.__rl-46 {  font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; }
+	body.mobile .__rl-46 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+	.__rl-47 {  font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; }
+	body.mobile .__rl-47 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+	.__rl-48 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+	body.mobile .__rl-48 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
+    </style>
+<script>
+    (function() {
+        let main = function (parent) {
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let parenti0 = saurabh_lohiya_github_io_portfolio__page(parent, inherited, {
+      child: fastn.mutableList([function (root, inherited) {
+        let rooti0 = nandhinidevie_github_io_portfolio_common__author_bio(root, inherited, {
+          author: global.nandhinidevie_github_io_portfolio_blog_authors_nandhini___nandhini
+        });
+      }
+      ])
+    });
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["main"] = main;
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__base_", fastn.recordInstance({
+  light: "#FFFFFF",
+  dark: "#000000"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__step_1_", fastn.recordInstance({
+  light: "#FDFAF1",
+  dark: "#111111"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__step_2_", fastn.recordInstance({
+  light: "#fbf3dc",
+  dark: "#2b2b2b"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__overlay_", fastn.recordInstance({
+  light: "#000000",
+  dark: "#000000"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__code_", fastn.recordInstance({
+  light: "#f5f5f5",
+  dark: "#21222c"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__background_", fastn.recordInstance({
+  base: global.fastn_community_github_io_dark_flame_cs_colors__base_,
+  step_1: global.fastn_community_github_io_dark_flame_cs_colors__step_1_,
+  step_2: global.fastn_community_github_io_dark_flame_cs_colors__step_2_,
+  overlay: global.fastn_community_github_io_dark_flame_cs_colors__overlay_,
+  code: global.fastn_community_github_io_dark_flame_cs_colors__code_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__border_", fastn.recordInstance({
+  light: "#f0ece2",
+  dark: "#434547"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__border_strong_", fastn.recordInstance({
+  light: "#D9D9D9",
+  dark: "#333333"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__text_", fastn.recordInstance({
+  light: "#707070",
+  dark: "#D9D9D9"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__text_strong_", fastn.recordInstance({
+  light: "#333333",
+  dark: "#FFFFFF"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__shadow_", fastn.recordInstance({
+  light: "#EF8435",
+  dark: "#EF8435"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__scrim_", fastn.recordInstance({
+  light: "#393939",
+  dark: "#393939"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_primary_base_", fastn.recordInstance({
+  light: "#EF8435",
+  dark: "#EF8435"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_primary_hover_", fastn.recordInstance({
+  light: "#D77730",
+  dark: "#D77730"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_primary_pressed_", fastn.recordInstance({
+  light: "#BF6A2A",
+  dark: "#BF6A2A"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_primary_disabled_", fastn.recordInstance({
+  light: "#FAD9C0",
+  dark: "#FAD9C0"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_primary_focused_", fastn.recordInstance({
+  light: "#B36328",
+  dark: "#B36328"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_primary_border_", fastn.recordInstance({
+  light: "#F3A063",
+  dark: "#F3A063"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_primary_text_", fastn.recordInstance({
+  light: "#512403",
+  dark: "#512403"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_primary_text_disabled_", fastn.recordInstance({
+  light: "#f2a164",
+  dark: "#f2a164"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_primary_border_disabled_", fastn.recordInstance({
+  light: "#fad9c0",
+  dark: "#fad9c0"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_primary_", fastn.recordInstance({
+  base: global.fastn_community_github_io_dark_flame_cs_colors__cta_primary_base_,
+  hover: global.fastn_community_github_io_dark_flame_cs_colors__cta_primary_hover_,
+  pressed: global.fastn_community_github_io_dark_flame_cs_colors__cta_primary_pressed_,
+  disabled: global.fastn_community_github_io_dark_flame_cs_colors__cta_primary_disabled_,
+  focused: global.fastn_community_github_io_dark_flame_cs_colors__cta_primary_focused_,
+  border: global.fastn_community_github_io_dark_flame_cs_colors__cta_primary_border_,
+  border_disabled: global.fastn_community_github_io_dark_flame_cs_colors__cta_primary_border_disabled_,
+  text: global.fastn_community_github_io_dark_flame_cs_colors__cta_primary_text_,
+  text_disabled: global.fastn_community_github_io_dark_flame_cs_colors__cta_primary_text_disabled_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_secondary_base_", fastn.recordInstance({
+  light: "#EBE8E5",
+  dark: "#EBE8E5"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_secondary_hover_", fastn.recordInstance({
+  light: "#D4D1CE",
+  dark: "#D4D1CE"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_secondary_pressed_", fastn.recordInstance({
+  light: "#BCBAB7",
+  dark: "#BCBAB7"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_secondary_disabled_", fastn.recordInstance({
+  light: "#F9F8F7",
+  dark: "#F9F8F7"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_secondary_focused_", fastn.recordInstance({
+  light: "#B0AEAC",
+  dark: "#B0AEAC"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_secondary_border_", fastn.recordInstance({
+  light: "#B0AEAC",
+  dark: "#B0AEAC"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_secondary_text_", fastn.recordInstance({
+  light: "#333333",
+  dark: "#333333"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_secondary_text_disabled_", fastn.recordInstance({
+  light: "#304655",
+  dark: "#fff"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_secondary_border_disabled_", fastn.recordInstance({
+  light: "#304655",
+  dark: "#f1dac0"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_secondary_", fastn.recordInstance({
+  base: global.fastn_community_github_io_dark_flame_cs_colors__cta_secondary_base_,
+  hover: global.fastn_community_github_io_dark_flame_cs_colors__cta_secondary_hover_,
+  pressed: global.fastn_community_github_io_dark_flame_cs_colors__cta_secondary_pressed_,
+  disabled: global.fastn_community_github_io_dark_flame_cs_colors__cta_secondary_disabled_,
+  focused: global.fastn_community_github_io_dark_flame_cs_colors__cta_secondary_focused_,
+  border: global.fastn_community_github_io_dark_flame_cs_colors__cta_secondary_border_,
+  border_disabled: global.fastn_community_github_io_dark_flame_cs_colors__cta_secondary_border_disabled_,
+  text: global.fastn_community_github_io_dark_flame_cs_colors__cta_secondary_text_,
+  text_disabled: global.fastn_community_github_io_dark_flame_cs_colors__cta_secondary_text_disabled_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_base_", fastn.recordInstance({
+  light: "#4A6490",
+  dark: "#4A6490"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_hover_", fastn.recordInstance({
+  light: "#3d5276",
+  dark: "#3d5276"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_pressed_", fastn.recordInstance({
+  light: "#2b3a54",
+  dark: "#2b3a54"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_disabled_", fastn.recordInstance({
+  light: "rgba(74, 100, 144, 0.4)",
+  dark: "rgba(74, 100, 144, 0.4)"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_focused_", fastn.recordInstance({
+  light: "#6882b1",
+  dark: "#6882b1"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_border_", fastn.recordInstance({
+  light: "#4e6997",
+  dark: "#4e6997"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_text_", fastn.recordInstance({
+  light: "#ffffff",
+  dark: "#ffffff"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_text_disabled_", fastn.recordInstance({
+  light: "#304655",
+  dark: "#fff"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_border_disabled_", fastn.recordInstance({
+  light: "#304655",
+  dark: "#f1dac0"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_", fastn.recordInstance({
+  base: global.fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_base_,
+  hover: global.fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_hover_,
+  pressed: global.fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_pressed_,
+  disabled: global.fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_disabled_,
+  focused: global.fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_focused_,
+  border: global.fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_border_,
+  border_disabled: global.fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_border_disabled_,
+  text: global.fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_text_,
+  text_disabled: global.fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_text_disabled_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_danger_base_", fastn.recordInstance({
+  light: "#F9E4E1",
+  dark: "#F9E4E1"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_danger_hover_", fastn.recordInstance({
+  light: "#F1BDB6",
+  dark: "#F1BDB6"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_danger_pressed_", fastn.recordInstance({
+  light: "#D46A63",
+  dark: "#D46A63"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_danger_disabled_", fastn.recordInstance({
+  light: "#FAECEB",
+  dark: "#FAECEB"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_danger_focused_", fastn.recordInstance({
+  light: "#D97973",
+  dark: "#D97973"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_danger_border_", fastn.recordInstance({
+  light: "#E9968C",
+  dark: "#E9968C"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_danger_text_", fastn.recordInstance({
+  light: "#D84836",
+  dark: "#D84836"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_danger_text_disabled_", fastn.recordInstance({
+  light: "#304655",
+  dark: "#fff"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_danger_border_disabled_", fastn.recordInstance({
+  light: "#304655",
+  dark: "#f1dac0"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__cta_danger_", fastn.recordInstance({
+  base: global.fastn_community_github_io_dark_flame_cs_colors__cta_danger_base_,
+  hover: global.fastn_community_github_io_dark_flame_cs_colors__cta_danger_hover_,
+  pressed: global.fastn_community_github_io_dark_flame_cs_colors__cta_danger_pressed_,
+  disabled: global.fastn_community_github_io_dark_flame_cs_colors__cta_danger_disabled_,
+  focused: global.fastn_community_github_io_dark_flame_cs_colors__cta_danger_focused_,
+  border: global.fastn_community_github_io_dark_flame_cs_colors__cta_danger_border_,
+  border_disabled: global.fastn_community_github_io_dark_flame_cs_colors__cta_danger_border_disabled_,
+  text: global.fastn_community_github_io_dark_flame_cs_colors__cta_danger_text_,
+  text_disabled: global.fastn_community_github_io_dark_flame_cs_colors__cta_danger_text_disabled_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__accent_primary_", fastn.recordInstance({
+  light: "#EF8435",
+  dark: "#EF8435"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__accent_secondary_", fastn.recordInstance({
+  light: "#EBE8E5",
+  dark: "#EBE8E5"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__accent_tertiary_", fastn.recordInstance({
+  light: "#c5cbd7",
+  dark: "#c5cbd7"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__accent_", fastn.recordInstance({
+  primary: global.fastn_community_github_io_dark_flame_cs_colors__accent_primary_,
+  secondary: global.fastn_community_github_io_dark_flame_cs_colors__accent_secondary_,
+  tertiary: global.fastn_community_github_io_dark_flame_cs_colors__accent_tertiary_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__error_base_", fastn.recordInstance({
+  light: "#F9E4E1",
+  dark: "#4f2a25c9"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__error_text_", fastn.recordInstance({
+  light: "#D84836",
+  dark: "#D84836"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__error_border_", fastn.recordInstance({
+  light: "#E9968C",
+  dark: "#E9968C"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__error_btb_", fastn.recordInstance({
+  base: global.fastn_community_github_io_dark_flame_cs_colors__error_base_,
+  text: global.fastn_community_github_io_dark_flame_cs_colors__error_text_,
+  border: global.fastn_community_github_io_dark_flame_cs_colors__error_border_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__success_base_", fastn.recordInstance({
+  light: "#DCEFE4",
+  dark: "#033a1bb8"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__success_text_", fastn.recordInstance({
+  light: "#3E8D61",
+  dark: "#159f52"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__success_border_", fastn.recordInstance({
+  light: "#95D0AF",
+  dark: "#95D0AF"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__success_btb_", fastn.recordInstance({
+  base: global.fastn_community_github_io_dark_flame_cs_colors__success_base_,
+  text: global.fastn_community_github_io_dark_flame_cs_colors__success_text_,
+  border: global.fastn_community_github_io_dark_flame_cs_colors__success_border_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__info_base_", fastn.recordInstance({
+  light: "#DAE7FB",
+  dark: "#233a5dc7"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__info_text_", fastn.recordInstance({
+  light: "#5290EC",
+  dark: "#5290EC"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__info_border_", fastn.recordInstance({
+  light: "#7EACF1",
+  dark: "#7EACF1"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__info_btb_", fastn.recordInstance({
+  base: global.fastn_community_github_io_dark_flame_cs_colors__info_base_,
+  text: global.fastn_community_github_io_dark_flame_cs_colors__info_text_,
+  border: global.fastn_community_github_io_dark_flame_cs_colors__info_border_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__warning_base_", fastn.recordInstance({
+  light: "#FDF7F1",
+  dark: "#3b2c1ee6"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__warning_text_", fastn.recordInstance({
+  light: "#E78B3E",
+  dark: "#E78B3E"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__warning_border_", fastn.recordInstance({
+  light: "#F2C097",
+  dark: "#F2C097"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__warning_btb_", fastn.recordInstance({
+  base: global.fastn_community_github_io_dark_flame_cs_colors__warning_base_,
+  text: global.fastn_community_github_io_dark_flame_cs_colors__warning_text_,
+  border: global.fastn_community_github_io_dark_flame_cs_colors__warning_border_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__custom_one_", fastn.recordInstance({
+  light: "#4AA35C",
+  dark: "#4AA35C"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__custom_two_", fastn.recordInstance({
+  light: "#5C2860",
+  dark: "#5C2860"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__custom_three_", fastn.recordInstance({
+  light: "#EBBE52",
+  dark: "#EBBE52"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__custom_four_", fastn.recordInstance({
+  light: "#FDFAF1",
+  dark: "#111111"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__custom_five_", fastn.recordInstance({
+  light: "#FBF5E2",
+  dark: "#222222"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__custom_six_", fastn.recordInstance({
+  light: "#ef8dd6",
+  dark: "#ef8dd6"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__custom_seven_", fastn.recordInstance({
+  light: "#7564be",
+  dark: "#7564be"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__custom_eight_", fastn.recordInstance({
+  light: "#d554b3",
+  dark: "#d554b3"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__custom_nine_", fastn.recordInstance({
+  light: "#ec8943",
+  dark: "#ec8943"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__custom_ten_", fastn.recordInstance({
+  light: "#da7a4a",
+  dark: "#da7a4a"
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs_colors__custom_", fastn.recordInstance({
+  one: global.fastn_community_github_io_dark_flame_cs_colors__custom_one_,
+  two: global.fastn_community_github_io_dark_flame_cs_colors__custom_two_,
+  three: global.fastn_community_github_io_dark_flame_cs_colors__custom_three_,
+  four: global.fastn_community_github_io_dark_flame_cs_colors__custom_four_,
+  five: global.fastn_community_github_io_dark_flame_cs_colors__custom_five_,
+  six: global.fastn_community_github_io_dark_flame_cs_colors__custom_six_,
+  seven: global.fastn_community_github_io_dark_flame_cs_colors__custom_seven_,
+  eight: global.fastn_community_github_io_dark_flame_cs_colors__custom_eight_,
+  nine: global.fastn_community_github_io_dark_flame_cs_colors__custom_nine_,
+  ten: global.fastn_community_github_io_dark_flame_cs_colors__custom_ten_
+}));
+fastn_utils.createNestedObject(global, "fastn_community_github_io_dark_flame_cs__main", fastn.recordInstance({
+  background: global.fastn_community_github_io_dark_flame_cs_colors__background_,
+  border: global.fastn_community_github_io_dark_flame_cs_colors__border_,
+  border_strong: global.fastn_community_github_io_dark_flame_cs_colors__border_strong_,
+  text: global.fastn_community_github_io_dark_flame_cs_colors__text_,
+  text_strong: global.fastn_community_github_io_dark_flame_cs_colors__text_strong_,
+  shadow: global.fastn_community_github_io_dark_flame_cs_colors__shadow_,
+  scrim: global.fastn_community_github_io_dark_flame_cs_colors__scrim_,
+  cta_primary: global.fastn_community_github_io_dark_flame_cs_colors__cta_primary_,
+  cta_secondary: global.fastn_community_github_io_dark_flame_cs_colors__cta_secondary_,
+  cta_tertiary: global.fastn_community_github_io_dark_flame_cs_colors__cta_tertiary_,
+  cta_danger: global.fastn_community_github_io_dark_flame_cs_colors__cta_danger_,
+  accent: global.fastn_community_github_io_dark_flame_cs_colors__accent_,
+  error: global.fastn_community_github_io_dark_flame_cs_colors__error_btb_,
+  success: global.fastn_community_github_io_dark_flame_cs_colors__success_btb_,
+  info: global.fastn_community_github_io_dark_flame_cs_colors__info_btb_,
+  warning: global.fastn_community_github_io_dark_flame_cs_colors__warning_btb_,
+  custom: global.fastn_community_github_io_dark_flame_cs_colors__custom_
+}));
+fastn_utils.createNestedObject(global, "saurabh_lohiya_github_io_portfolio_assets__files.assets.hamburger_menu.svg", fastn.recordInstance({
+  light: "-/saurabh-lohiya.github.io/portfolio/assets/hamburger-menu.svg",
+  dark: "-/saurabh-lohiya.github.io/portfolio/assets/hamburger-menu.svg"
+}));
+let saurabh_lohiya_github_io_portfolio_header__header_mobile = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let __args__ = {
+      site_name: null,
+      sidebar_open: fastn.wrapMutable(false),
+      show_section: fastn.wrapMutable(false),
+      sections: fastn.mutableList([]),
+      toc: fastn.mutableList([]),
+      current_section: null,
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.addEventHandler(fastn_dom.Event.ClickOutside, function () {
+      ftd.set_bool({
+        a: __args__.show_section,
+        v: false,
+      }, parenti0);
+    });
+    parenti0.addEventHandler(fastn_dom.Event.ClickOutside, function () {
+      ftd.set_bool({
+        a: __args__.sidebar_open,
+        v: false,
+      }, parenti0);
+    });
+    parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.ZIndex, 999, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Padding, fastn_dom.Length.Px(16), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.SpaceBetween, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+        rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.site_name, inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Padding, fastn_dom.Length.Px(12), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("step_2")), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.site_url, inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.TextStyle, fastn.mutableList([fastn_dom.TextStyle.Bold]), inherited);
+      },
+      function (root, inherited) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+        rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.menu_icon, inherited);
+        rooti0.addEventHandler(fastn_dom.Event.Click, function () {
+          ftd.toggle({
+            a: __args__.sidebar_open,
+          }, rooti0);
+        });
+        rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(32)), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(32)), inherited);
+      }
+      ]), inherited);
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["saurabh_lohiya_github_io_portfolio_header__header_mobile"] = saurabh_lohiya_github_io_portfolio_header__header_mobile;
+fastn_utils.createNestedObject(global, "saurabh_lohiya_github_io_portfolio_assets__files.assets.cross.png", fastn.recordInstance({
+  light: "-/saurabh-lohiya.github.io/portfolio/assets/cross.png",
+  dark: "-/saurabh-lohiya.github.io/portfolio/assets/cross.png"
+}));
+let saurabh_lohiya_github_io_portfolio_header__mobile_sidebar = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let __args__ = {
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.addEventHandler(fastn_dom.Event.Click, function () {
+      ftd.toggle({
+        a: __args__.sidebar_open,
+      }, parenti0);
+    });
+    parenti0.setProperty(fastn_dom.PropertyKind.Anchor, fastn_dom.Anchor.Window, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Top, fastn_dom.Length.Px(0), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Bottom, fastn_dom.Length.Px(0), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Left, fastn_dom.Length.Px(0), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Right, fastn_dom.Length.Px(0), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.ZIndex, 1, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("overlay")), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+      rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.saurabh_lohiya_github_io_portfolio_assets__files.get("assets").get("cross").get("png"), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Anchor, fastn_dom.Anchor.Window, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.HugContent, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(24)), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Top, fastn_dom.Length.Px(20), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Right, fastn_dom.Length.Px(16), inherited);
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["saurabh_lohiya_github_io_portfolio_header__mobile_sidebar"] = saurabh_lohiya_github_io_portfolio_header__mobile_sidebar;
+let saurabh_lohiya_github_io_portfolio_header__header_item_mobile = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let __args__ = {
+      link: null,
+      children: fastn.mutableList([]),
+      is_active: false,
+      open: fastn.wrapMutable(false),
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.addEventHandler(fastn_dom.Event.Click, function () {
+      ftd.toggle({
+        a: __args__.open,
+      }, parenti0);
+    });
+    parenti0.addEventHandler(fastn_dom.Event.ClickOutside, function () {
+      ftd.set_bool({
+        a: __args__.open,
+        v: false,
+      }, parenti0);
+    });
+    parenti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Start, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+      rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
+      rooti0.addEventHandler(fastn_dom.Event.Click, function () {
+        ftd.set_bool({
+          a: __args__.show_section,
+          v: true,
+        }, rooti0);
+      });
+      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(12), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.formula([inherited.get("colors").get("text"),
+      inherited.get("colors").get("success").get("text"),
+      __args__.is_active], function () {
+        if (function () {
+          return fastn_utils.getter(__args__.is_active);
+        }()) {
+          return inherited.get("colors").get("success").get("text");
+        } else {
+          return inherited.get("colors").get("text");
+        }
+      }
+      ), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.link, inherited);
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["saurabh_lohiya_github_io_portfolio_header__header_item_mobile"] = saurabh_lohiya_github_io_portfolio_header__header_item_mobile;
+let saurabh_lohiya_github_io_portfolio_header__menu_mobile = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let __args__ = {
+      site_name: null,
+      site_logo: null,
+      sections: fastn.mutableList([]),
+      show_section: fastn.wrapMutable(false),
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.setProperty(fastn_dom.PropertyKind.Anchor, fastn_dom.Anchor.Window, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(24), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(20), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.OverflowY, fastn_dom.Overflow.Auto, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Top, fastn_dom.Length.Px(80), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Left, fastn_dom.Length.Px(0), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.ZIndex, 99, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("base")), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      fastn_dom.conditionalDom(root, [
+        __args__.sections
+      ], function () {
+        return (!ftd.is_empty(__args__.sections));
+      }, function (root) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+        rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+          fastn_utils.getter(__args__.sections).forLoop(root, function (root, item, index) {
+            let rooti0 = saurabh_lohiya_github_io_portfolio_header__header_item_mobile(root, inherited, {
+              title: item.get("title"),
+              link: item.get("url"),
+              children: item.get("children"),
+              is_active: item.get("is_active"),
+              show_section: fastn.wrapMutable(__args__.show_section)
+            });
+            return rooti0;
+          });
+        }
+        ]), inherited);
+        return rooti0;
+      });
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["saurabh_lohiya_github_io_portfolio_header__menu_mobile"] = saurabh_lohiya_github_io_portfolio_header__menu_mobile;
+fastn_utils.createNestedObject(global, "saurabh_lohiya_github_io_portfolio_assets__files.assets.portfolio.png", fastn.recordInstance({
+  light: "-/saurabh-lohiya.github.io/portfolio/assets/portfolio.png",
+  dark: "-/saurabh-lohiya.github.io/portfolio/assets/portfolio.png"
+}));
+let saurabh_lohiya_github_io_portfolio_header__sub_section = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let __args__ = {
+      icon: global.saurabh_lohiya_github_io_portfolio_assets__files.get("assets").get("portfolio").get("png"),
+      active: false,
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(90)), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(75)), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.BorderBottomWidth, fastn_dom.Length.Px(1), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.BorderRightWidth, fastn.formula([__args__.active], function () {
+      if (function () {
+        return fastn_utils.getter(__args__.active);
+      }()) {
+        return fastn_dom.Length.Px(2);
+      }
+    }
+    ), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.BorderBottomColor, inherited.get("colors").get("border_strong"), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.BorderRightColor, inherited.get("colors").get("border"), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      fastn_dom.conditionalDom(root, [
+        __args__.icon
+      ], function () {
+        return (fastn_utils.getter(__args__.icon) !== null);
+      }, function (root) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+        rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.icon, inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(24)), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(24)), inherited);
+        return rooti0;
+      });
+    },
+    function (root, inherited) {
+      let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+      rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("label_large"), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(10), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.link, inherited);
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["saurabh_lohiya_github_io_portfolio_header__sub_section"] = saurabh_lohiya_github_io_portfolio_header__sub_section;
+fastn_utils.createNestedObject(global, "saurabh_lohiya_github_io_portfolio_assets__files.assets.dark_icon.svg", fastn.recordInstance({
+  light: "-/saurabh-lohiya.github.io/portfolio/assets/dark-icon.svg",
+  dark: "-/saurabh-lohiya.github.io/portfolio/assets/dark-icon-dark.svg"
+}));
+fastn_utils.createNestedObject(global, "saurabh_lohiya_github_io_portfolio_assets__files.assets.light_icon.svg", fastn.recordInstance({
+  light: "-/saurabh-lohiya.github.io/portfolio/assets/light-icon.svg",
+  dark: "-/saurabh-lohiya.github.io/portfolio/assets/light-icon-dark.svg"
+}));
+let saurabh_lohiya_github_io_portfolio_header__header_desktop = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let __args__ = {
+      site_logo: null,
+      site_name: null,
+      sections: fastn.mutableList([]),
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(95)), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Vh(100)), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.BorderWidth, fastn_dom.Length.Px(1), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Sticky, true, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("step_2")), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+      rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.site_name, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(12), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomWidth, fastn_dom.Length.Px(1), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderColor, inherited.get("colors").get("border_strong"), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("step_2")), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.site_url, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.TextStyle, fastn.mutableList([fastn_dom.TextStyle.Bold]), inherited);
+    },
+    function (root, inherited) {
+      fastn_utils.getter(__args__.sections).forLoop(root, function (root, item, index) {
+        let rooti0 = saurabh_lohiya_github_io_portfolio_header__sub_section(root, inherited, {
+          title: item.get("title"),
+          icon: item.get("font_icon"),
+          active: item.get("is_active"),
+          link: item.get("url")
+        });
+        return rooti0;
+      });
+    },
+    function (root, inherited) {
+      let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(90)), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(75)), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomWidth, fastn_dom.Length.Px(1), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomColor, inherited.get("colors").get("border_strong"), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderRightColor, inherited.get("colors").get("border"), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+        fastn_dom.conditionalDom(root, [
+          ftd.dark_mode
+        ], function () {
+          return fastn_utils.getter(ftd.dark_mode);
+        }, function (root) {
+          let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+          rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.saurabh_lohiya_github_io_portfolio_assets__files.get("assets").get("light_icon").get("svg"), inherited);
+          rooti0.addEventHandler(fastn_dom.Event.Click, function () {
+            ftd.enable_light_mode({
+            }, rooti0);
+          });
+          rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(28)), inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(28)), inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.Padding, fastn_dom.Length.Px(2), inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(100), inherited);
+          return rooti0;
+        });
+      },
+      function (root, inherited) {
+        fastn_dom.conditionalDom(root, [
+          ftd.dark_mode
+        ], function () {
+          return (!fastn_utils.getter(ftd.dark_mode));
+        }, function (root) {
+          let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+          rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, global.saurabh_lohiya_github_io_portfolio_assets__files.get("assets").get("dark_icon").get("svg"), inherited);
+          rooti0.addEventHandler(fastn_dom.Event.Click, function () {
+            ftd.enable_dark_mode({
+            }, rooti0);
+          });
+          rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(28)), inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(28)), inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.Padding, fastn_dom.Length.Px(2), inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(100), inherited);
+          return rooti0;
+        });
+      }
+      ]), inherited);
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["saurabh_lohiya_github_io_portfolio_header__header_desktop"] = saurabh_lohiya_github_io_portfolio_header__header_desktop;
+let saurabh_lohiya_github_io_portfolio_header__header = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let __args__ = {
+      site_name: null,
+      site_logo: null,
+      site_url: "/",
+      sections: fastn.mutableList([]),
+      toc: fastn.mutableList([]),
+      sidebar_open: fastn.wrapMutable(false),
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([ftd.device], function () {
+      if (function () {
+        return (fastn_utils.getter(ftd.device) == "mobile");
+      }()) {
+        return fastn_dom.Resizing.FillContainer;
+      }
+    }
+    ), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.ZIndex, 100, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Sticky, true, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      fastn_dom.conditionalDom(root, [
+        ftd.device
+      ], function () {
+        return (ftd.device.get() === "mobile");
+      }, function (root) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Wrapper);
+        rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+          let rooti0 = saurabh_lohiya_github_io_portfolio_header__header_mobile(root, inherited, {
+            site_name: __args__.site_name,
+            site_url: __args__.site_url,
+            sidebar_open: fastn.wrapMutable(__args__.sidebar_open),
+            menu_icon: __args__.menu_icon
+          });
+          return rooti0;
+        }
+        ]), inherited);
+        return rooti0;
+      });
+    },
+    function (root, inherited) {
+      fastn_dom.conditionalDom(root, [
+        __args__.sidebar_open
+      ], function () {
+        return fastn_utils.getter(__args__.sidebar_open);
+      }, function (root) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+        rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.ZIndex, 10, inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("background").get("overlay")), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+          fastn_dom.conditionalDom(root, [
+            __args__.sidebar_open
+          ], function () {
+            return fastn_utils.getter(__args__.sidebar_open);
+          }, function (root) {
+            let rooti0 = saurabh_lohiya_github_io_portfolio_header__mobile_sidebar(root, inherited, {
+              sidebar_open: fastn.wrapMutable(__args__.sidebar_open)
+            });
+            return rooti0;
+          });
+        }
+        ]), inherited);
+        return rooti0;
+      });
+    },
+    function (root, inherited) {
+      fastn_dom.conditionalDom(root, [
+        __args__.sidebar_open
+      ], function () {
+        return fastn_utils.getter(__args__.sidebar_open);
+      }, function (root) {
+        let rooti0 = saurabh_lohiya_github_io_portfolio_header__menu_mobile(root, inherited, {
+          site_name: __args__.site_name,
+          site_logo: __args__.site_logo,
+          site_url: __args__.site_url,
+          sections: __args__.sections
+        });
+        return rooti0;
+      });
+    },
+    function (root, inherited) {
+      fastn_dom.conditionalDom(root, [
+        ftd.device
+      ], function () {
+        return (ftd.device.get() === "desktop");
+      }, function (root) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Wrapper);
+        rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+          let rooti0 = saurabh_lohiya_github_io_portfolio_header__header_desktop(root, inherited, {
+            site_logo: __args__.site_logo,
+            site_url: __args__.site_url,
+            site_name: __args__.site_name,
+            sections: __args__.sections
+          });
+          return rooti0;
+        }
+        ]), inherited);
+        return rooti0;
+      });
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["saurabh_lohiya_github_io_portfolio_header__header"] = saurabh_lohiya_github_io_portfolio_header__header;
+fastn_utils.createNestedObject(global, "saurabh_lohiya_github_io_portfolio_common__sitemap", fastn.recordInstance({
+  sections: fastn.mutableList([fastn.recordInstance({
+    bury: false,
+    children: fastn.mutableList([]),
+    description: null,
+    document: null,
+    font_icon: fastn.recordInstance({
+      dark: "assets/home.svg",
+      light: "assets/home.svg"
+    }),
+    img_src: null,
+    is_active: false,
+    is_disabled: false,
+    is_heading: false,
+    is_open: false,
+    number: null,
+    path: null,
+    title: "Home",
+    url: "index.html"
+  }),
+  fastn.recordInstance({
+    bury: false,
+    children: fastn.mutableList([]),
+    description: null,
+    document: null,
+    font_icon: fastn.recordInstance({
+      dark: "assets/info.svg",
+      light: "assets/info.svg"
+    }),
+    img_src: null,
+    is_active: false,
+    is_disabled: false,
+    is_heading: false,
+    is_open: false,
+    number: null,
+    path: null,
+    title: "About Me",
+    url: "#about-me"
+  }),
+  fastn.recordInstance({
+    bury: false,
+    children: fastn.mutableList([]),
+    description: null,
+    document: null,
+    font_icon: fastn.recordInstance({
+      dark: "assets/heart.svg",
+      light: "assets/heart.svg"
+    }),
+    img_src: null,
+    is_active: false,
+    is_disabled: false,
+    is_heading: false,
+    is_open: false,
+    number: null,
+    path: null,
+    title: "My Clients",
+    url: "#clients"
+  }),
+  fastn.recordInstance({
+    bury: false,
+    children: fastn.mutableList([]),
+    description: null,
+    document: null,
+    font_icon: fastn.recordInstance({
+      dark: "assets/briefcase.svg",
+      light: "assets/briefcase.svg"
+    }),
+    img_src: null,
+    is_active: false,
+    is_disabled: false,
+    is_heading: false,
+    is_open: false,
+    number: null,
+    path: null,
+    title: "Portfolio",
+    url: "#latest-works"
+  }),
+  fastn.recordInstance({
+    bury: false,
+    children: fastn.mutableList([]),
+    description: null,
+    document: null,
+    font_icon: fastn.recordInstance({
+      dark: "assets/blog.png",
+      light: "assets/blog.png"
+    }),
+    img_src: null,
+    is_active: false,
+    is_disabled: false,
+    is_heading: false,
+    is_open: false,
+    number: null,
+    path: null,
+    title: "Blog",
+    url: "#blogs"
+  }),
+  fastn.recordInstance({
+    bury: false,
+    children: fastn.mutableList([]),
+    description: null,
+    document: null,
+    font_icon: fastn.recordInstance({
+      dark: "assets/contact.png",
+      light: "assets/contact.png"
+    }),
+    img_src: null,
+    is_active: false,
+    is_disabled: false,
+    is_heading: false,
+    is_open: false,
+    number: null,
+    path: null,
+    title: "Contact",
+    url: "#contact"
+  })]),
+  subsections: fastn.mutableList([]),
+  toc: fastn.mutableList([]),
+  current_section: null,
+  current_subsection: null,
+  current_page: null
+}));
+let saurabh_lohiya_github_io_portfolio__page = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let __args__ = {
+      child: fastn.mutableList([]),
+      colors: global.fastn_community_github_io_dark_flame_cs__main,
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      fastn_dom.conditionalDom(root, [
+        ftd.device
+      ], function () {
+        return (ftd.device.get() === "desktop");
+      }, function (root) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Wrapper);
+        rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+          let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+          rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+            let rooti0 = saurabh_lohiya_github_io_portfolio_header__header(root, inherited, {
+              site_name: "Tony",
+              site_url: "/",
+              menu_icon: global.saurabh_lohiya_github_io_portfolio_assets__files.get("assets").get("hamburger_menu").get("svg"),
+              sections: global.saurabh_lohiya_github_io_portfolio_common__sitemap.get("sections"),
+              menu_icon: global.saurabh_lohiya_github_io_portfolio_assets__files.get("assets").get("hamburger_menu").get("svg")
+            });
+          },
+          function (root, inherited) {
+            let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+            rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Children, __args__.child, inherited);
+          }
+          ]), inherited);
+          return rooti0;
+        }
+        ]), inherited);
+        return rooti0;
+      });
+    },
+    function (root, inherited) {
+      fastn_dom.conditionalDom(root, [
+        ftd.device
+      ], function () {
+        return (ftd.device.get() === "mobile");
+      }, function (root) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Wrapper);
+        rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+          let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+          rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+            let rooti0 = saurabh_lohiya_github_io_portfolio_header__header(root, inherited, {
+              site_name: "Tony",
+              site_url: "/",
+              menu_icon: global.saurabh_lohiya_github_io_portfolio_assets__files.get("assets").get("hamburger_menu").get("svg"),
+              sections: global.saurabh_lohiya_github_io_portfolio_common__sitemap.get("sections"),
+              menu_icon: global.saurabh_lohiya_github_io_portfolio_assets__files.get("assets").get("hamburger_menu").get("svg")
+            });
+          },
+          function (root, inherited) {
+            let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+            rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(35), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Children, __args__.child, inherited);
+          }
+          ]), inherited);
+          return rooti0;
+        }
+        ]), inherited);
+        return rooti0;
+      });
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["saurabh_lohiya_github_io_portfolio__page"] = saurabh_lohiya_github_io_portfolio__page;
+let nandhinidevie_github_io_portfolio_common__author_bio_desktop = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let __args__ = {
+      company: null,
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.MarginLeft, fastn_dom.Length.Px(12), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.MarginRight, fastn_dom.Length.Px(12), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(12), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(12), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(32)), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
+      rooti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(24)), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+        rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(152)), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+          let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+          rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.avatar, inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(500), inherited);
+        }
+        ]), inherited);
+      },
+      function (root, inherited) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+        rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Left, inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+          let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+          rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_large"), inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(16), inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+        },
+        function (root, inherited) {
+          let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+          rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_small"), inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.profile, inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(4), inherited);
+        },
+        function (root, inherited) {
+          let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+          rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_small"), inherited);
+          rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.company, inherited);
+        }
+        ]), inherited);
+      }
+      ]), inherited);
+    },
+    function (root, inherited) {
+      let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+      rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_regular"), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.body, inherited);
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["nandhinidevie_github_io_portfolio_common__author_bio_desktop"] = nandhinidevie_github_io_portfolio_common__author_bio_desktop;
+let nandhinidevie_github_io_portfolio_common__author_bio_mobile = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let __args__ = {
+      company: null,
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(12), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(12), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(16)), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Image);
+      rooti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.avatar, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(132)), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(132)), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(500), inherited);
+    },
+    function (root, inherited) {
+      let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
+      rooti0.setProperty(fastn_dom.PropertyKind.AlignContent, fastn_dom.AlignContent.Center, inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+        rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_small"), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+      },
+      function (root, inherited) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+        rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_small"), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.profile, inherited);
+      },
+      function (root, inherited) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+        rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_small"), inherited);
+        rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.company, inherited);
+      }
+      ]), inherited);
+    },
+    function (root, inherited) {
+      let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
+      rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("fine_print"), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.body, inherited);
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["nandhinidevie_github_io_portfolio_common__author_bio_mobile"] = nandhinidevie_github_io_portfolio_common__author_bio_mobile;
+let nandhinidevie_github_io_portfolio_common__author_bio_card = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let __args__ = {
+      company: null,
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Margin, fastn.formula([ftd.device], function () {
+      if (function () {
+        return (fastn_utils.getter(ftd.device) !== "mobile");
+      }()) {
+        return fastn_dom.Length.Px(12);
+      }
+    }
+    ), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Spacing, fastn_dom.Spacing.Fixed(fastn_dom.Length.Px(24)), inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      fastn_dom.conditionalDom(root, [
+        ftd.device
+      ], function () {
+        return (ftd.device.get() === "desktop");
+      }, function (root) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Wrapper);
+        rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+          let rooti0 = nandhinidevie_github_io_portfolio_common__author_bio_desktop(root, inherited, {
+            title: __args__.title,
+            profile: __args__.profile,
+            company: __args__.company,
+            avatar: __args__.avatar,
+            body: __args__.body
+          });
+          return rooti0;
+        }
+        ]), inherited);
+        return rooti0;
+      });
+    },
+    function (root, inherited) {
+      fastn_dom.conditionalDom(root, [
+        ftd.device
+      ], function () {
+        return (ftd.device.get() === "mobile");
+      }, function (root) {
+        let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Wrapper);
+        rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+          let rooti0 = nandhinidevie_github_io_portfolio_common__author_bio_mobile(root, inherited, {
+            title: __args__.title,
+            profile: __args__.profile,
+            company: __args__.company,
+            avatar: __args__.avatar,
+            body: __args__.body
+          });
+          return rooti0;
+        }
+        ]), inherited);
+        return rooti0;
+      });
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["nandhinidevie_github_io_portfolio_common__author_bio_card"] = nandhinidevie_github_io_portfolio_common__author_bio_card;
+let nandhinidevie_github_io_portfolio_common__author_bio = function (parent, inherited, args)
+{
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "nandhinidevie_github_io_portfolio";
+  try {
+    let __args__ = {
+    };
+    inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
+    __args__ = fastn_utils.getArgs(__args__, args);
+    let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+    parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
+      let rooti0 = nandhinidevie_github_io_portfolio_common__author_bio_card(root, inherited, {
+        title: __args__.author.get("title"),
+        profile: __args__.author.get("profile"),
+        company: __args__.author.get("company"),
+        avatar: __args__.author.get("image"),
+        body: __args__.author.get("body")
+      });
+    }
+    ]), inherited);
+    return parenti0;
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+global["nandhinidevie_github_io_portfolio_common__author_bio"] = nandhinidevie_github_io_portfolio_common__author_bio;
+fastn_utils.createNestedObject(global, "nandhinidevie_github_io_portfolio_assets__files.assets.profile_picture.jpeg", fastn.recordInstance({
+  light: "-/nandhinidevie.github.io/portfolio/assets/profile-picture.jpeg",
+  dark: "-/nandhinidevie.github.io/portfolio/assets/profile-picture.jpeg"
+}));
+fastn_utils.createNestedObject(global, "nandhinidevie_github_io_portfolio_blog_authors_nandhini___nandhini", fastn.recordInstance({
+  title: "Nandhini",
+  profile: "Copywriter",
+  company: "Copy for Impact",
+  bio_url: "index.html",
+  image: global.nandhinidevie_github_io_portfolio_assets__files.get("assets").get("profile_picture").get("jpeg"),
+  body: "Freelance copywriter for sustainable businesses."
+}));
+fastn_dom.codeData.availableThemes["coldark-theme.dark"] = "code-theme-9A3284FD117DFF7CFD432FF860A5E14169FA592BC3DA4F5E8A6975143F5EA07F.css";
+fastn_dom.codeData.availableThemes["coldark-theme.light"] = "code-theme-99CD7B013C96C4632F0AEA39AC265387B814AE85A7D33666A4AE4BEFF59016D0.css";
+fastn_dom.codeData.availableThemes["coy-theme"] = "code-theme-B3AEA322EADEDA61F0E219845A0E9C8E73F6345E49362B46E6F52CEE40471248.css";
+fastn_dom.codeData.availableThemes["dracula-theme"] = "code-theme-0CA636E4954E3FC6184FB8000174F8EAA6C61DB10F6A18D74740E6D2032C1A2E.css";
+fastn_dom.codeData.availableThemes["duotone-theme.dark"] = "code-theme-95B9118AFC8631777EEBBD89B2066C3706A6DF3579B14F41AF05564E41CAA09C.css";
+fastn_dom.codeData.availableThemes["duotone-theme.earth"] = "code-theme-6EB6F03F9F578742CA0CD1189693E43A6135D910989ADD88CA3C0D6117EE24D7.css";
+fastn_dom.codeData.availableThemes["duotone-theme.forest"] = "code-theme-256C21B515FC9E77F95D88689A4086B9D9406B7AAE3A273780FE8B8748C5A7D2.css";
+fastn_dom.codeData.availableThemes["duotone-theme.light"] = "code-theme-0800A18B1822D6AFDAF807CF840379A2DB3483A1F058CA29FBCFB3815CA76148.css";
+fastn_dom.codeData.availableThemes["duotone-theme.sea"] = "code-theme-9A45313F167DBD90654BFD5BB3BC0BDF6AE447485C30B0389ADA7B49C069E46A.css";
+fastn_dom.codeData.availableThemes["duotone-theme.space"] = "code-theme-4DD8479BE14A755645BC09FF433FB70EB4CB28F0CBF3CA98DCB71B244B85B194.css";
+fastn_dom.codeData.availableThemes["fastn-theme.dark"] = "code-theme-F614177D3155EA8E915B35A3445175DC7C96D02FBC621F8AFD0FCCC417ED8A43.css";
+fastn_dom.codeData.availableThemes["fastn-theme.light"] = "code-theme-B8645DE281A38A3068C56919DE1BB0511696A1EE8002C5088748DA0BAC0806E6.css";
+fastn_dom.codeData.availableThemes["fire.light"] = "code-theme-A352AF572179AB980583D41BC41ADDBA36C4C17757A34C1C6AAAF2C253E25CE3.css";
+fastn_dom.codeData.availableThemes["gruvbox-theme.dark"] = "code-theme-B68AA27E05B319F04A9CD747AADBF9B9CD791E040DEC519AE9544B4FF65DDBAC.css";
+fastn_dom.codeData.availableThemes["gruvbox-theme.light"] = "code-theme-06E6F84E43C61CB1653D9F4FACD46B7EBCB3CD8A48EFAEF2E5BE3E9E9212D1E6.css";
+fastn_dom.codeData.availableThemes["laserwave-theme"] = "code-theme-0F444C6433C356376F7E92122F6C521FE40242BEC9D9E050359EE1DF4A9D5E6D.css";
+fastn_dom.codeData.availableThemes["material-theme.dark"] = "code-theme-8CCA3D600F91FA55950DF3132F2ABE4BA14CEEA13CD23E157BF6A137762B8452.css";
+fastn_dom.codeData.availableThemes["material-theme.light"] = "code-theme-8C59190F5018F48CCBB063359072EE9053D04923BBC5D1BA52B574E78D8C536A.css";
+fastn_dom.codeData.availableThemes["nightowl-theme"] = "code-theme-88F91252A8A0EA125B4BA2C7B85E65580DB580F1477931AADCB5118E4E69D1CD.css";
+fastn_dom.codeData.availableThemes["one-theme.dark"] = "code-theme-A24DC8F09D03756A62923E8A883CAE3B938D54E2813F0855312D2554DBE97BAD.css";
+fastn_dom.codeData.availableThemes["one-theme.light"] = "code-theme-60E02531E77333F3F1B636C4FC43E976EA9F41AD75268B2DD825C33C68B573A6.css";
+fastn_dom.codeData.availableThemes["vs-theme.dark"] = "code-theme-DC76F700474E809F7BA2D9914793D04881B17EA4699BA9C568C83D32A18B0173.css";
+fastn_dom.codeData.availableThemes["vs-theme.light"] = "code-theme-7852E516BA094B01897820BB3432BE553FE5B28F00E9CA0EBC9DFFB8312EE8BF.css";
+fastn_dom.codeData.availableThemes["ztouch-theme"] = "code-theme-792C7BB9F4C8DFF3E0CBC354D2084DBF71BC5750C2C1357F0E7D936867AFAB62.css";
+
+        let main_wrapper = function (parent) {
+            let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
+            parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+            parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.FillContainer, inherited);
+            main(parenti0);
+        }
+        fastnVirtual.doubleBuffer(main_wrapper);
+        ftd.post_init();
+    })();
+
+    window.onload = function() {
+        fastn_utils.resetFullHeight();
+        fastn_utils.setFullHeight();
+        ftd.emit_on_load();
+    };
+</script>
+</html>

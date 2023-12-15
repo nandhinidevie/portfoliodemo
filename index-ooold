@@ -1,0 +1,2473 @@
+-- import: saurabh-lohiya.github.io/portfolio/common
+-- import: saurabh-lohiya.github.io/portfolio/header as h
+-- import: fastn-community.github.io/forest-cs as cs
+-- import: fastn/processors as pr
+-- import: saurabh-lohiya.github.io/portfolio/blog-articles/sample-post
+
+
+-- page:
+
+-- hero: Are you in the business of saving the planet?
+tag: Copywriting for Sustainable Businesses
+avatar: $assets.files.assets.profile-picture.jpeg
+cta-primary: My Work
+cta-primary-link: /#latest-works
+cta-secondary: Book a Meeting
+cta-secondary-link: https://calendly.com/nandhini-copywriter/discovery-call/
+
+If you're someone who doesn't just sell stuff but rallies behind 
+a cause, I'll whip up words that'll click with your audience and 
+turn them into full-on cheerleaders for the planet and your business. 
+
+-- about-me-container: ABOUT ME
+tag: A freelance copywriter based in India
+id: about-me
+ 
+-- about-me-portrait:
+socials: $common.socials
+src: $assets.files.assets.profile-picture.jpeg
+
+-- about-me-info: I'm Nandhini
+tag: Welcome to my world of daring copy, where words are a little rebellious, a tad bold, and always unforgettable.
+cta-text: Book a Meeting
+cta-link: https://calendly.com/nandhini-copywriter/discovery-call/
+
+Like you, I’m tired of seeing sustainable marketing either dragging or 
+bragging and pushing people away. I believe that good communication must 
+strike a chord deep within, share your authentic story and invite them to join the cause.
+
+If you are in the business of saving the planet but struggling to showcase 
+its true value, let’s team up. I’ll make sure your audience look forward 
+to being sustainable, rather than it being a choice.
+
+-- end: about-me-container
+
+;; -- skills: MY SKILLS
+;; tag: A freelance copywriter based in India
+;; languages: $common.languages
+;; achievements: $common.achievements
+
+-- services: MY SERVICES
+categories-1: $common.categories-1
+categories-2: $common.categories-2
+categories-3: $common.categories-3
+category-title-1: Web Development
+category-title-2: Business
+category-title-3: Mobile App
+id: services
+
+Copy for Change
+
+-- clients: MY CLIENTS
+client-lists: $common.client-lists
+id: clients
+
+-- left-image: Lorem ipsum dolor sit
+image: $assets.files.assets.pineapple.jpeg
+logo: $assets.files.assets.ipsum-logo.svg
+left: true
+
+Cum sint enim id rerum fugit vel enim eius qui provident similique
+
+-- latest-works: LATEST WORKS
+projects: $common.projects
+id: latest-works
+
+Website Copy
+
+-- testimonials: TESTIMONIALS
+testimonials: $common.testimonials
+
+A freelance copywriter based in India
+
+-- posts: Must Read Articles
+id: blogs
+
+-- post-article:
+post-data: $sample-post.meta-1
+
+-- post-article:
+post-data: $sample-post.meta-2
+
+-- post-article:
+post-data: $sample-post.meta-1
+
+-- post-article:
+post-data: $sample-post.meta-1
+
+-- post-article:
+post-data: $sample-post.meta-1
+
+-- end: posts
+
+/-- blogs: LATEST BLOGS
+articles: $common.articles
+id: blogs
+
+It’s time we shift the narrative from 
+"*the planet is dying*" to one of hope and optimism. 
+
+-- contact-form: Contact Me
+sub-title: SAY SOMETHING
+cta-text: SEND MESSAGE
+link: index.html
+id: contact
+
+A freelance copywriter based in India
+
+;; -- contact-info: Our Address
+;; info: 123 Stree New York City , United States Of America 750065.
+
+;; -- contact-info: Our Address
+;; info: 123 Stree New York City , United States Of America 750065.
+
+;; -- contact-info: Our Address
+;; info: 123 Stree New York City , United States Of America 750065.
+
+-- end: contact-form
+
+-- footer:
+socials: $common.socials
+copyright: © 2023 copyright all right reserved
+
+-- end: footer
+
+-- end: page
+
+
+
+
+
+
+
+
+-- component page:
+children child:
+ftd.color-scheme colors: $cs.main
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.desktop:
+
+-- ftd.row:
+height: fill-container
+width: fill-container
+
+-- h.header: Nandhini
+site-url: /
+menu-icon: $assets.files.assets.hamburger-menu.svg
+sections: $common.sitemap.sections
+
+-- ftd.column:
+width: fill-container
+children: $page.child
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.column:
+width: fill-container
+
+-- h.header: Nandhini
+site-url: /
+menu-icon: $assets.files.assets.hamburger-menu.svg
+sections: $common.sitemap.sections
+
+-- ftd.column:
+width: fill-container
+margin-top.px: 35
+children: $page.child
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: page
+
+
+
+
+
+
+
+
+
+
+-- component hero:
+optional caption title:
+optional string designation:
+optional string tag:
+optional body body:
+ftd.image-src avatar:
+string cta-primary:
+string cta-primary-link: index.html
+string cta-secondary:
+string cta-secondary-link: index.html
+
+-- ftd.row:
+width: fill-container
+align-content: center
+height.fixed.vh: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.base
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: $common.max-width
+height: fill-container
+wrap: true
+
+-- ftd.column:
+width.fixed.percent: 50
+width if { ftd.device == "mobile" }: fill-container
+spacing.fixed.px: 15
+align-self: center
+
+-- ftd.text: $hero.tag
+if: { hero.tag != NULL }
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-regular
+style: bold
+
+-- ftd.text: $hero.title
+if: { hero.title != NULL }
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-large
+style: bold
+
+-- ftd.text: $hero.designation
+if: { hero.designation != NULL }
+color: $inherited.colors.text-strong
+role: $inherited.types.heading-tiny
+style: bold
+
+-- ftd.text:
+if: { hero.body != NULL }
+color: $inherited.colors.text-strong
+role: $inherited.types.label-large
+max-width.fixed.percent: 90
+
+$hero.body
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 10
+
+-- button-solid: $hero.cta-primary
+cta-link: $hero.cta-primary-link
+
+-- button-solid: $hero.cta-secondary
+cta-link: $hero.cta-secondary-link
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 50
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+src: $hero.avatar
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero
+
+
+
+
+
+
+
+
+
+
+-- component button-solid:
+caption title:
+string cta-link: index.html
+boolean $cta-hover: false
+
+-- ftd.row:
+padding-vertical.px: 8
+padding-horizontal.px: 20
+background.solid: $inherited.colors.background.base
+background.solid if { button-solid.cta-hover }: $inherited.colors.background.step-2
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $button-solid.cta-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button-solid.cta-hover, v = false)
+link: $button-solid.cta-link
+border-width.px: 2
+border-color: $inherited.colors.border
+
+-- ftd.text: $button-solid.title
+color: $inherited.colors.text-strong
+role: $inherited.types.copy-regular
+
+-- end: ftd.row
+
+-- end: button-solid
+
+
+
+
+
+
+
+
+
+
+-- component button-solid-sm:
+caption title:
+string cta-link: index.html
+boolean $cta-hover: false
+
+-- ftd.row:
+padding-vertical.px: 6
+padding-horizontal.px: 14
+background.solid: $inherited.colors.background.base
+background.solid if { button-solid-sm.cta-hover }: $inherited.colors.background.step-2
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $button-solid-sm.cta-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button-solid-sm.cta-hover, v = false)
+link: $button-solid-sm.cta-link
+border-width.px: 2
+border-color: $inherited.colors.border
+
+-- ftd.text: $button-solid-sm.title
+color: $inherited.colors.text-strong
+role: $inherited.types.label-large
+style: bold
+
+-- end: ftd.row
+
+-- end: button-solid-sm
+
+
+
+
+
+
+
+
+
+
+-- component button-hallow:
+caption title:
+string cta-link:
+boolean $cta-hover: false
+
+-- ftd.row:
+padding-vertical.px: 8
+padding-horizontal.px: 20
+background.solid: $inherited.colors.background.base
+background.solid if { button-hallow.cta-hover }: $inherited.colors.cta-primary.text
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $button-hallow.cta-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button-hallow.cta-hover, v = false)
+border-width.px: 2
+border-color: $inherited.colors.cta-primary.text
+link: $button-hallow.cta-link
+
+-- ftd.text: $button-hallow.title
+color: $inherited.colors.cta-primary.text
+color if { button-hallow.cta-hover }: $inherited.colors.text-strong
+role: $inherited.types.copy-regular
+
+-- end: ftd.row
+
+-- end: button-hallow
+
+
+
+
+
+
+
+
+
+
+-- component contact-form:
+
+optional caption title:
+optional string sub-title:
+optional body body:
+string cta-text:
+string link: index.html
+boolean $is-active: false
+children child:
+string id: contact
+
+-- ftd.column:
+id: $contact-form.id
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.step-2
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $common.max-width
+
+-- ftd.text: $contact-form.title
+if: { contact-form.title != NULL }
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+style: bold
+
+-- ftd.column:
+width.fixed.px: 100
+height.fixed.px: 2
+background.solid: $inherited.colors.border
+margin-top.px: 10
+margin-top.px if { ftd.device == "mobile" }: 15
+
+-- end: ftd.column
+
+-- ftd.text:
+if: { contact-form.body != NULL }
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-top.px: 10
+margin-top.px if { ftd.device == "mobile" }: 25
+
+$contact-form.body
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 30
+margin-top.px: 50
+wrap: true
+
+-- ftd.column:
+padding.px: 36
+spacing.fixed.px: 24
+background.solid: $inherited.colors.background.base
+border-width.px: 1
+border-radius.px: 5
+
+-- ftd.text: $contact-form.sub-title
+if: { contact-form.sub-title != NULL }
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+style: bold
+
+-- ftd.row:
+spacing.fixed.px: 32
+wrap: true
+
+-- ftd.text-input:
+width.fixed.px: 312
+width if { ftd.device == "mobile" }: fill-container
+placeholder: Name *
+padding-vertical.px: 4
+padding-horizontal.px: 8
+border-bottom-width.px: 1
+border-color: $inherited.colors.text
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text-input:
+placeholder: Email *
+padding-vertical.px: 4
+width.fixed.px: 312
+width if { ftd.device == "mobile" }: fill-container
+padding-horizontal.px: 8
+border-bottom-width.px: 1
+border-color: $inherited.colors.text
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- end: ftd.row
+
+-- ftd.text-input:
+placeholder: Subject *
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.text
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.column:
+spacing.fixed.px: 32
+width: fill-container
+margin-top.px: 16
+
+-- ftd.text-input:
+placeholder: Write Your Message Here...
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+type: text
+role: $inherited.types.copy-small
+border-bottom-width.px: 1
+border-color: $inherited.colors.text
+color: $inherited.colors.border
+multiline: true
+
+-- end: ftd.column
+
+-- button-solid: $contact-form.cta-text
+cta-link: $contact-form.link
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 20
+children: $contact-form.child
+align-self: center
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: contact-form
+
+
+
+
+
+
+
+
+
+
+-- component contact-info:
+caption title:
+string info:
+ftd.image-src icon: $assets.files.assets.location.svg
+
+-- ftd.row:
+spacing.fixed.px: 16
+max-width.fixed.px: 350
+padding.px: 20
+border-width.px: 1
+background.solid: $inherited.colors.background.base
+
+-- ftd.image:
+background.solid: $inherited.colors.background.step-2
+color: $inherited.colors.border
+src: $contact-info.icon
+width.fixed.px: 40
+height.fixed.px: 40
+border-radius.percent: 50
+padding.px: 8
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text: $contact-info.title
+role: $inherited.types.label-large
+color: $inherited.colors.text
+style: bold
+
+-- ftd.text: $contact-info.info
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: contact-info
+
+
+
+
+
+
+
+
+
+
+-- component latest-works:
+optional caption title:
+optional body body:
+$common.project list projects:
+string id:
+
+-- ftd.column:
+id: $latest-works.id
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.base
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $common.max-width
+
+-- ftd.text: $latest-works.title
+if: { latest-works.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+style: bold
+
+-- ftd.column:
+width.fixed.px: 100
+height.fixed.px: 2
+background.solid: $inherited.colors.border
+margin-top.px: 10
+margin-top.px if { ftd.device == "mobile" }: 15
+
+-- end: ftd.column
+
+-- ftd.text:
+if: { latest-works.body != NULL }
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-top.px: 20
+margin-top.px if { ftd.device == "mobile" }: 25
+
+$latest-works.body
+
+-- ftd.row:
+width: fill-container
+wrap: true
+margin-top.px: 30
+spacing.fixed.px: 30
+
+-- portfolio-box: $obj.title
+$loop$: $latest-works.projects as $obj
+sub-title: $obj.sub-title
+src: $obj.src
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: latest-works
+
+
+
+
+
+
+
+
+
+
+-- component portfolio-box:
+caption title:
+string sub-title:
+ftd.image-src src:
+boolean $hover: false
+
+-- ftd.column:
+width.fixed.px: 348
+height.fixed.px: 342
+$on-mouse-enter$: $ftd.set-bool($a = $portfolio-box.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $portfolio-box.hover, v = false)
+border-radius.px: 5
+
+-- ftd.image:
+border-radius.px: 5
+src: $portfolio-box.src
+width: fill-container
+height: fill-container
+
+-- ftd.column:
+border-radius.px: 5
+if: { portfolio-box.hover }
+background.solid: $common.overlay
+anchor: parent
+top.px: 0
+left.px: 0
+width: fill-container
+height: fill-container
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { portfolio-box.hover }
+anchor: parent
+top.percent: 40
+left.percent: 25
+spacing.fixed.px: 20
+align-content: center
+
+-- ftd.text: $portfolio-box.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text
+style: bold
+
+-- ftd.text: $portfolio-box.sub-title
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+style: bold
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: portfolio-box
+
+
+
+
+
+
+
+
+
+
+-- component services:
+optional caption title:
+optional body body:
+string category-title-1:
+string category-title-2:
+string category-title-3:
+$common.category list categories-1:
+$common.category list categories-2:
+$common.category list categories-3:
+string id: services
+
+-- ftd.column:
+id: $services.id
+width: fill-container
+background.solid: $inherited.colors.background.step-2
+align-content: center
+padding-vertical.px: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $common.max-width
+align-content if { ftd.device == "mobile" }: center
+
+-- ftd.text: $services.title
+if: { services.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+style: bold
+
+-- ftd.column:
+width.fixed.px: 100
+height.fixed.px: 2
+background.solid: $inherited.colors.border
+margin-top.px: 10
+margin-top.px if { ftd.device == "mobile" }: 20
+
+-- end: ftd.column
+
+-- ftd.text:
+if: { services.body != NULL }
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-top.px: 20
+margin-top.px if { ftd.device == "mobile" }: 30
+text-align if { ftd.device == "mobile" }: center
+
+$services.body
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 32
+padding-vertical.px: 32
+
+-- ftd.text: $services.category-title-1
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+
+-- ftd.row:
+width: fill-container
+wrap: true
+spacing.fixed.px: 30
+
+-- service-1: $obj.title
+$loop$: $services.categories-1 as $obj
+icon: $obj.icon
+
+$obj.body
+
+-- end: ftd.row
+
+-- ftd.text: $services.category-title-2
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+
+-- ftd.row:
+width: fill-container
+wrap: true
+spacing.fixed.px: 30
+
+-- service-2: $obj.title
+$loop$: $services.categories-2 as $obj
+icon: $obj.icon
+
+$obj.body
+
+-- end: ftd.row
+
+-- ftd.text: $services.category-title-3
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+
+
+-- ftd.row:
+width: fill-container
+wrap: true
+spacing.fixed.px: 30
+
+-- service-3: $obj.title
+$loop$: $services.categories-3 as $obj
+icon: $obj.icon
+
+$obj.body
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: services
+
+
+
+
+
+
+
+
+
+
+-- component service-1:
+caption title:
+body body:
+ftd.image-src icon:
+boolean $hover: false
+
+-- ftd.column:
+$on-mouse-enter$: $ftd.set-bool($a = $service-1.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $service-1.hover, v = false)
+width.fixed.px: 348
+padding-vertical.px: 40
+padding-horizontal.px: 30
+background.solid: $inherited.colors.background.step-2
+border-width.px: 1
+border-radius.px: 5
+
+-- ftd.image:
+src: $service-1.icon
+padding.px: 12
+width.fixed.px: 64
+height.fixed.px: 64
+border-radius.percent: 50
+border-width.px: 1
+border-style: dotted
+border-color: $inherited.colors.text-strong
+
+-- ftd.text: $service-1.title
+role: $inherited.types.label-large
+role if { ftd.device == "mobile" }: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+color if { service-1.hover }: $inherited.colors.text-strong
+style: bold
+margin-top.px: 22
+
+-- ftd.text:
+role: $inherited.types.label-large
+color: $inherited.colors.text-strong
+margin-top.px: 12
+
+$service-1.body
+
+-- end: ftd.column
+
+-- end: service-1
+
+
+
+
+
+
+
+
+
+
+-- component service-2:
+caption title:
+body body:
+ftd.image-src icon:
+boolean $hover: false
+
+-- ftd.column:
+$on-mouse-enter$: $ftd.set-bool($a = $service-2.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $service-2.hover, v = false)
+width.fixed.px: 348
+padding-vertical.px: 40
+padding-horizontal.px: 30
+background.solid: $inherited.colors.background.step-2
+border-width.px: 1
+border-radius.px: 5
+
+-- ftd.column:
+-- ftd.image:
+src: $service-2.icon
+padding.px: 12
+width.fixed.px: 64
+height.fixed.px: 64
+border-radius.percent: 50
+border-width.px: 1
+border-style: dotted
+border-color: $inherited.colors.text-strong
+
+-- ftd.text: $service-2.title
+role: $inherited.types.label-large
+role if { ftd.device == "mobile" }: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+color if { service-2.hover }: $inherited.colors.text-strong
+style: bold
+margin-top.px: 22
+
+-- ftd.text:
+role: $inherited.types.label-large
+color: $inherited.colors.text-strong
+margin-top.px: 12
+
+$service-2.body
+
+-- end: ftd.column
+
+-- end: service-2
+
+
+
+
+
+
+
+
+
+
+-- component service-3:
+caption title:
+body body:
+ftd.image-src icon:
+boolean $hover: false
+
+-- ftd.column:
+$on-mouse-enter$: $ftd.set-bool($a = $service-3.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $service-3.hover, v = false)
+width.fixed.px: 348
+padding-vertical.px: 40
+padding-horizontal.px: 30
+background.solid: $inherited.colors.background.step-2
+border-width.px: 1
+border-radius.px: 5
+
+-- ftd.image:
+src: $service-3.icon
+padding.px: 12
+width.fixed.px: 64
+height.fixed.px: 64
+border-radius.percent: 50
+border-width.px: 1
+border-style: dotted
+border-color: $inherited.colors.text-strong
+
+
+-- ftd.text: $service-3.title
+role: $inherited.types.label-large
+role if { ftd.device == "mobile" }: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+color if { service-3.hover }: $inherited.colors.text-strong
+style: bold
+margin-top.px: 22
+
+-- ftd.text:
+role: $inherited.types.label-large
+color: $inherited.colors.text-strong
+margin-top.px: 12
+
+$service-3.body
+
+-- end: ftd.column
+
+-- end: service-3
+
+
+
+
+
+
+
+
+
+
+-- component clients:
+optional caption title:
+optional body body:
+$common.client-list list client-lists:
+string id: clients
+
+-- ftd.column:
+id: $clients.id
+width: fill-container
+background.solid: $inherited.colors.background.step-1
+align-content: center
+padding-vertical.px: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $common.max-width
+align-content if { ftd.device == "mobile" }: center
+
+-- ftd.text: $clients.title
+if: { clients.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+style: bold
+
+-- ftd.column:
+width.fixed.px: 100
+height.fixed.px: 2
+background.solid: $inherited.colors.border
+margin-top.px: 10
+margin-top.px if { ftd.device == "mobile" }: 20
+
+-- end: ftd.column
+
+-- ftd.text:
+if: { clients.body != NULL }
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-top.px: 20
+margin-top.px if { ftd.device == "mobile" }: 30
+text-align if { ftd.device == "mobile" }: center
+
+$clients.body
+
+-- ftd.row:
+width: fill-container
+wrap: true
+margin-top.px: 30
+spacing.fixed.px: 30
+
+-- client:
+for: $obj in $clients.client-lists
+logo: $obj.logo
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: clients
+
+
+
+
+
+
+
+
+
+-- component client:
+ftd.image-src logo:
+boolean $hover: false
+
+-- ftd.image:
+src: $client.logo
+width.fixed.px: 340
+height.fixed.px: 340
+border-radius.px: 4
+border-width.px: 1
+border-color: $inherited.colors.text-strong
+$on-mouse-enter$: $ftd.set-bool($a = $client.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $client.hover, v = false)
+
+-- end: client
+
+
+
+
+
+
+
+
+
+-- component left-image:
+caption title:
+body body:
+ftd.image-src image:
+ftd.image-src logo:
+boolean left: false
+
+-- ftd.row:
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.step-2
+spacing.fixed.px: 32
+
+-- ftd.image:
+if: { left-image.left }
+src: $left-image.image
+width.fixed.percent: 40
+fit: cover
+
+-- ftd.column:
+width.fixed.percent: 40
+spacing.fixed.px: 24
+
+-- ftd.text: $left-image.title
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+
+-- ftd.text:
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+
+$left-image.body
+
+-- ftd.image:
+src: $left-image.logo
+width: auto
+fit: cover
+margin-top.px: 64
+
+-- end: ftd.column
+
+-- ftd.image:
+if: { !left-image.left }
+src: $left-image.image
+width.fixed.percent: 40
+fit: cover
+
+-- end: ftd.row
+
+-- end: left-image
+
+
+
+
+
+
+
+
+
+
+
+-- component post:
+common.post-meta meta:
+children container:
+optional boolean sidebar: false
+string share-txt: Share
+ftd.ui list right-sidebar:
+
+-- ftd.column:
+width: fill-container
+
+-- article-card: $post.meta.title
+image: $post.meta.post-image
+author: $post.meta.author
+timestamp: $post.meta.published-on
+container: $post.container
+sidebar: $post.sidebar
+right-sidebar: $post.right-sidebar
+
+$post.meta.body
+
+-- end: ftd.column
+
+-- end: post
+
+
+
+
+
+
+
+
+
+
+-- component article-card:
+caption title:
+optional ftd.image-src image:
+common.author-meta author:
+string timestamp:
+optional body body:
+children container:
+optional boolean sidebar: false
+ftd.ui list right-sidebar:
+
+-- ftd.column:
+
+-- ftd.desktop:
+
+-- article-card-desktop: $article-card.title
+image: $article-card.image
+author: $article-card.author
+timestamp: $article-card.timestamp
+body: $article-card.body
+container: $article-card.container
+sidebar: $article-card.sidebar
+right-sidebar: $article-card.right-sidebar
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- article-card-mobile: $article-card.title
+image: $article-card.image
+author: $article-card.author
+timestamp: $article-card.timestamp
+body: $article-card.body
+container: $article-card.container
+sidebar: $article-card.sidebar
+right-sidebar: $article-card.right-sidebar
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: article-card
+
+
+
+
+
+
+
+
+
+
+-- component article-card-desktop:
+caption title:
+optional ftd.image-src image:
+common.author-meta author:
+string timestamp:
+optional body body:
+children container:
+optional boolean sidebar: false
+ftd.ui list right-sidebar:
+string written-by: Written by
+string posted-on: Posted on
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.column:
+color: $inherited.colors.text
+width: fill-container
+background.solid: $inherited.colors.background.base
+padding-horizontal.px: 12
+
+-- ftd.row:
+spacing.fixed.px: 28
+max-width.fixed.percent: 80
+width: fill-container
+color: $inherited.colors.text-strong
+
+-- ftd.text: |
+role: $inherited.types.heading-medium
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: $article-card-desktop.title
+role: $inherited.types.heading-large
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 12
+margin-top.px: 24
+
+-- ftd.text: $article-card-desktop.posted-on
+role: $inherited.types.copy-large
+
+-- ftd.text: $article-card-desktop.timestamp
+role: $inherited.types.copy-large
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.image:
+if: { article-card-desktop.image != NULL }
+src: $article-card-desktop.image
+width: fill-container
+height: hug-content
+margin-vertical.px: 40
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 48
+padding-vertical.px: 100
+
+-- ftd.column:
+min-width.fixed.percent: 20
+min-height.fixed.calc: 100vh - 0px
+height.fixed.vh: 100
+overflow-y: auto
+width.fixed.px: 250
+align-content: top-left
+padding-horizontal.px: 12
+padding-bottom.px: 32
+
+-- ftd.column:
+background.solid: $inherited.colors.background.step-1
+border-radius.px: 8
+padding-vertical.px: 20
+padding-horizontal.px: 8
+width: fill-container
+align-content: center
+link if { article-card-desktop.author.bio-url != NULL }: $article-card-desktop.author.bio-url
+color: $inherited.colors.text-strong
+margin-bottom.px: 40
+
+-- ftd.text: $article-card-desktop.written-by
+role: $inherited.types.copy-small
+white-space: nowrap
+margin-bottom.px: 18
+
+-- ftd.image:
+if: { article-card-desktop.author.image != NULL }
+src: $article-card-desktop.author.image
+margin-bottom.px: 18
+border-radius.px: 100
+width.fixed.px: 90
+height: auto
+
+-- ftd.text: $article-card-desktop.author.title
+role: $inherited.types.copy-regular
+white-space: nowrap
+
+-- ftd.text: $article-card-desktop.author.profile
+role: $inherited.types.copy-small
+white-space: nowrap
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 70
+padding-horizontal.px: 12
+color: $inherited.colors.text
+
+-- ftd.text:
+if: { article-card-desktop.body != NULL }
+role: $inherited.types.copy-regular
+margin-bottom.em: 1
+
+$article-card-desktop.body
+
+-- ftd.column:
+children: $article-card-desktop.container
+width: fill-container
+spacing.fixed.px: 32
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: article-card-desktop
+
+
+
+
+
+
+
+
+
+
+-- component article-card-mobile:
+caption title:
+optional ftd.image-src image:
+common.author-meta author:
+string timestamp:
+optional body body:
+children container:
+optional boolean sidebar: false
+ftd.ui list right-sidebar:
+string written-by: Written by
+string posted-on: Posted on
+
+-- ftd.column:
+color: $inherited.colors.text
+width: fill-container
+spacing.fixed.px: 24
+
+-- ftd.text: $article-card-mobile.title
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 12
+role: $inherited.types.copy-large
+
+-- ftd.text: $article-card-mobile.posted-on
+
+-- ftd.text: $article-card-mobile.timestamp
+
+-- end: ftd.row
+
+-- ftd.image:
+if: { article-card-mobile.image != NULL }
+src: $article-card-mobile.image
+width: fill-container
+height: hug-content
+
+-- ftd.text:
+if: { article-card-mobile.body != NULL }
+role: $inherited.types.copy-regular
+width: fill-container
+
+$article-card-mobile.body
+
+-- ftd.column:
+children: $article-card-mobile.container
+width: fill-container
+spacing.fixed.px: 24
+
+-- end: ftd.column
+
+-- ftd.column:
+background.solid: $inherited.colors.background.step-1
+border-radius.px: 8
+padding-vertical.px: 20
+padding-horizontal.px: 8
+width: fill-container
+align-content: center
+link if { article-card-mobile.author.bio-url != NULL }: $article-card-mobile.author.bio-url
+color: $inherited.colors.text-strong
+margin-top.px if { ftd.device == "mobile" }: 40
+margin-bottom.px: 40
+
+-- ftd.text: $article-card-mobile.written-by
+role: $inherited.types.copy-small
+white-space: nowrap
+margin-bottom.px: 18
+
+-- ftd.image:
+if: { article-card-mobile.author.image != NULL }
+src: $article-card-mobile.author.image
+margin-bottom.px: 18
+border-radius.px: 100
+width.fixed.px: 90
+height: auto
+
+-- ftd.text: $article-card-mobile.author.title
+role: $inherited.types.copy-regular
+white-space: nowrap
+
+-- ftd.text: $article-card-mobile.author.profile
+role: $inherited.types.copy-small
+white-space: nowrap
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { article-card-mobile.sidebar }
+children: $article-card-mobile.right-sidebar
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: article-card-mobile
+
+
+
+
+
+
+
+
+
+
+-- component posts:
+optional caption title:
+optional body body:
+children container:
+string id:
+
+-- ftd.column:
+id: $posts.id
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.base
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $common.max-width
+spacing.fixed.px: 24
+
+-- ftd.text: $posts.title
+if: { posts.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+style: bold
+
+-- ftd.row:
+children: $posts.container
+width: fill-container
+wrap: true
+spacing.fixed.px: 50
+align-content if { ftd.device == "mobile" }: center
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: posts
+
+
+
+
+
+
+
+
+
+
+-- component post-article:
+common.post-meta post-data:
+
+-- post-article-ui: $post-article.post-data.title
+timestamp: $post-article.post-data.published-on
+image: $post-article.post-data.post-image
+link: $post-article.post-data.post-url
+body: $post-article.post-data.body
+author: $post-article.post-data.author
+
+-- end: post-article
+
+
+
+
+
+
+
+
+
+
+-- component post-article-ui:
+caption title:
+string timestamp:
+ftd.image-src image: 
+string link:
+body body:
+optional common.author-meta author:
+string posted-on: Posted on
+string written-by: By
+
+-- ftd.column:
+
+-- ftd.desktop:
+
+-- post-article-ui-desktop: $post-article-ui.title
+timestamp: $post-article-ui.timestamp
+image: $post-article-ui.image
+link: $post-article-ui.link
+body: $post-article-ui.body
+author: $post-article-ui.author
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- post-article-ui-mobile: $post-article-ui.title
+timestamp: $post-article-ui.timestamp
+image: $post-article-ui.image
+link: $post-article-ui.link
+body: $post-article-ui.body
+author: $post-article-ui.author
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: post-article-ui
+
+
+
+
+
+
+
+
+
+
+-- component post-article-ui-desktop:
+caption title:
+string timestamp:
+ftd.image-src image: 
+string link:
+body body:
+optional common.author-meta author:
+string posted-on: Posted on
+string written-by: By
+
+-- ftd.column:
+width.fixed.px: 330
+width.fixed.px if { ftd.device == "mobile" }: 315
+background.solid: $inherited.colors.background.base
+margin-top.px: 258
+
+-- ftd.column:
+background.solid: $inherited.colors.background.base
+padding.px: 18
+border-width.px: 1
+border-color: $inherited.colors.border
+z-index: 2
+
+-- ftd.text: $post-article-ui-desktop.title
+role: $inherited.types.label-large
+color: $inherited.colors.text-strong
+style: bold
+margin-top.px: 12
+
+-- ftd.text: 
+role: $inherited.types.label-large
+color: $inherited.colors.text
+margin-top.px: 16
+
+$post-article-ui-desktop.title
+
+-- ftd.text: Read More
+role: $inherited.types.label-large
+color: $inherited.colors.text-strong
+margin-top.px: 16
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+link: $post-article-ui-desktop.link
+
+-- end: ftd.column
+
+-- ftd.text: $post-article-ui-desktop.timestamp
+z-index: 2
+role: $inherited.types.label-small
+color: $inherited.colors.text-strong
+background.solid: $inherited.colors.background.step-2
+anchor: parent
+top.px: -25
+left.px: 0
+padding-vertical.px: 5
+padding-horizontal.px: 16
+
+-- ftd.image:
+z-index: 1
+src: $post-article-ui-desktop.image
+width.fixed.px: 350
+anchor: parent
+top.px: -232
+left.px: -10
+
+-- end: ftd.column
+
+-- end: post-article-ui-desktop
+
+
+
+
+
+
+
+
+
+
+-- component post-article-ui-mobile:
+caption title:
+string timestamp:
+ftd.image-src image: 
+string link:
+body body:
+optional common.author-meta author:
+string posted-on: Posted on
+string written-by: By
+
+-- ftd.column:
+width: fill-container
+color: $inherited.colors.text
+role: $inherited.types.label-small
+margin-bottom.px: 24
+
+-- ftd.image:
+src: $post-article-ui-mobile.image
+height: auto
+width: fill-container
+link: $post-article-ui-mobile.link
+margin-bottom.px: 20
+
+-- ftd.text: $post-article-ui-mobile.title
+role: $inherited.types.heading-small
+link: $post-article-ui-mobile.link
+color: $inherited.colors.text-strong
+style: semi-bold
+margin-bottom.px: 16
+
+-- ftd.row:
+spacing.fixed.px: 6
+margin-bottom.px: 8
+
+-- ftd.text: $post-article-ui-mobile.written-by
+
+-- ftd.text: $post-article-ui-mobile.author.title
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 6
+
+-- ftd.text: $post-article-ui-mobile.posted-on
+
+-- ftd.text: $post-article-ui-mobile.timestamp
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: post-article-ui-mobile
+
+
+
+
+
+
+
+
+-- component blogs:
+optional caption title:
+optional body body:
+$common.article list articles:
+string id:
+
+-- ftd.column:
+id: $blogs.id
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.base
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $common.max-width
+
+-- ftd.text: $blogs.title
+if: { blogs.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+style: bold
+
+-- ftd.column:
+width.fixed.px: 100
+height.fixed.px: 2
+background.solid: $inherited.colors.border
+margin-top.px: 10
+
+-- end: ftd.column
+
+-- ftd.text:
+if: { blogs.body != NULL }
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-top.px: 20
+
+$blogs.body
+
+-- ftd.row:
+width: fill-container
+wrap: true
+spacing.fixed.px: 50
+spacing.fixed.px if { ftd.device == "mobile" }: 265
+margin-top.px: 280
+align-content if { ftd.device == "mobile" }: center
+
+-- blog: $obj.title
+$loop$: $blogs.articles as $obj
+publishing-date: $obj.publishing-date
+tag: $obj.tag
+src: $obj.src
+link: $obj.link
+
+$obj.body
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: blogs
+
+
+
+
+
+
+
+
+
+
+-- component blog:
+caption title:
+string tag:
+string link:
+body body:
+ftd.image-src src:
+string publishing-date:
+boolean $cta-hover: false
+
+-- ftd.column:
+width.fixed.px: 330
+width.fixed.px if { ftd.device == "mobile" }: 315
+background.solid: $inherited.colors.background.base
+
+-- ftd.column:
+background.solid: $inherited.colors.background.base
+padding.px: 18
+border-width.px: 1
+border-color: $inherited.colors.border
+z-index: 2
+
+-- ftd.text: $blog.tag
+role: $inherited.types.label-small
+color: $inherited.colors.text-strong
+border-width.px: 1
+border-radius.px: 2
+padding.px: 5
+padding-horizontal.px: 10
+
+-- ftd.text: $blog.title
+role: $inherited.types.label-large
+color: $inherited.colors.text-strong
+style: bold
+margin-top.px: 12
+
+-- ftd.text: 
+role: $inherited.types.label-large
+color: $inherited.colors.text
+margin-top.px: 16
+
+$blog.body
+
+-- ftd.text: Read More
+role: $inherited.types.label-large
+color: $inherited.colors.text-strong
+margin-top.px: 16
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+link: $blog.link
+
+-- end: ftd.column
+
+-- ftd.text: $blog.publishing-date
+z-index: 2
+role: $inherited.types.label-small
+color: $inherited.colors.text-strong
+background.solid: $inherited.colors.background.step-2
+anchor: parent
+top.px: -25
+left.px: 0
+padding-vertical.px: 5
+padding-horizontal.px: 16
+
+-- ftd.image:
+z-index: 1
+src: $blog.src
+width.fixed.px: 350
+anchor: parent
+top.px: -232
+left.px: -10
+
+-- end: ftd.column
+
+-- end: blog
+
+
+
+
+
+
+
+
+
+
+-- component testimonials:
+optional caption title:
+optional body body:
+$common.testimonial list testimonials:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.step-2
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $common.max-width
+
+-- ftd.text: $testimonials.title
+if: { testimonials.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+style: bold
+
+-- ftd.column:
+width.fixed.px: 100
+height.fixed.px: 2
+background.solid: $inherited.colors.border
+margin-top.px: 10
+
+-- end: ftd.column
+
+-- ftd.text:
+if: { testimonials.body != NULL }
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-top.px: 20
+
+$testimonials.body
+
+-- ftd.row:
+width: fill-container
+wrap: true
+spacing.fixed.px: 50
+margin-top.px: 50
+
+-- testimonial-card: $obj.title
+$loop$: $testimonials.testimonials as $obj
+designation: $obj.designation
+src: $obj.src
+
+$obj.body
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: testimonials
+
+
+
+
+
+
+
+
+
+
+-- component testimonial-card:
+caption title:
+string designation:
+body body:
+ftd.image-src src:
+
+-- ftd.row:
+background.solid: $inherited.colors.background.base
+width.fixed.px: 540
+padding.px: 20
+spacing.fixed.px: 25
+
+-- ftd.image:
+src: $testimonial-card.src
+width.fixed.px: 120
+height.fixed.px: 120
+border-top-left-radius.percent: 50
+border-bottom-left-radius.percent: 50
+border-bottom-right-radius.percent: 50
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: 
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$testimonial-card.body
+
+-- ftd.text: $testimonial-card.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+style: bold
+margin-top.px: 16
+
+-- ftd.text: $testimonial-card.designation
+role: $inherited.types.label-large
+color: $inherited.colors.text-strong
+margin-top.px: 8
+style: bold
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: testimonial-card
+
+
+
+
+
+
+
+
+
+-- component about-me-container:
+optional caption title:
+optional string tag:
+children child:
+string id:
+
+-- ftd.column:
+id: $about-me-container.id
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+background.solid: $inherited.colors.background.step-2
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $common.max-width
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+align-content if { ftd.device == "mobile" }: center
+
+-- ftd.text: $about-me-container.title
+if: { about-me-container.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+style: bold
+
+-- ftd.column:
+width.fixed.px: 100
+height.fixed.px: 2
+background.solid: $inherited.colors.border
+margin-top.px: 10
+margin-top.px if { ftd.device == "mobile" }: 20
+
+-- end: ftd.column
+
+-- ftd.text: $about-me-container.tag
+if: { about-me-container.tag != NULL }
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-top.px: 20
+margin-top.px if { ftd.device == "mobile" }: 30
+text-align if { ftd.device == "mobile" }: center
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+wrap: true
+margin-top.px: 40
+children: $about-me-container.child
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: about-me-container
+
+
+
+
+
+
+
+
+
+
+-- component about-me-portrait:
+$common.social list socials:
+ftd.image-src src:
+
+-- ftd.column:
+align-content: center
+height: fill-container
+width.fixed.percent: 40
+height.fixed.px if { ftd.device == "mobile" }: 400
+width.fixed.percent if { ftd.device == "mobile" }: 100
+
+-- ftd.column:
+height: fill-container
+background.solid: $inherited.colors.background.base
+padding.px: 14
+border-radius.px: 5
+border-width.px: 1
+
+-- ftd.image:
+src: $about-me-portrait.src
+width: fill-container
+height: fill-container
+
+-- ftd.column:
+anchor: parent
+top.px: 30
+left.px: 0
+spacing.fixed.px: 8
+background.solid: $inherited.colors.background.base
+padding-left.px: 14
+padding-right.px: 8
+padding-vertical.px: 12
+
+-- social-icon:
+$loop$: $about-me-portrait.socials as $obj
+icon: $obj.icon
+link: $obj.link
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: about-me-portrait
+
+
+
+
+
+
+
+
+
+
+-- component social-icon:
+ftd.image-src icon:
+string link:
+
+-- ftd.column:
+background.solid: $inherited.colors.background.step-2
+padding.px: 8
+
+-- ftd.image:
+width.fixed.px: 18
+height.fixed.px: 18
+src: $social-icon.icon
+link: $social-icon.link
+padding-left.px: 0
+
+-- end: ftd.column
+
+-- end: social-icon
+
+
+
+
+
+
+
+
+
+
+-- component about-me-info:
+caption title:
+string tag:
+body body:
+string cta-text:
+string cta-link:
+$common.info list info-list:
+
+-- ftd.column:
+width.fixed.percent: 55
+width.fixed.percent if { ftd.device == "mobile" }: 100
+padding.px: 25
+
+-- ftd.text: $about-me-info.title
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+style: bold
+
+-- ftd.text: $about-me-info.tag
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+margin-top.px: 10
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-top.px: 18
+
+$about-me-info.body
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+margin-top.px: 20
+margin-vertical.px: 20
+wrap: true
+
+-- info-group: $obj.title
+$loop$: $about-me-info.info-list as $obj
+tag: $obj.tag
+
+-- end: ftd.row
+
+-- button-solid-sm: $about-me-info.cta-text
+cta-link: $about-me-info.cta-link
+
+-- end: ftd.column
+
+-- end: about-me-info
+
+
+
+
+
+
+
+
+
+
+-- component info-group:
+optional caption title:
+optional string tag:
+
+-- ftd.row:
+width.fixed.px: 280
+padding-vertical.px: 5
+
+-- ftd.text: $info-group.title
+if: { info-group.title != NULL }
+role: $inherited.types.label-large
+color: $inherited.colors.text-strong
+width.fixed.px: 90
+
+-- ftd.text: $info-group.tag
+if: { info-group.tag != NULL }
+role: $inherited.types.label-large
+color: $inherited.colors.text
+border-left-width.px: 1
+border-color: $inherited.colors.text-strong
+padding-left.px: 15
+
+-- end: ftd.row
+
+-- end: info-group
+
+
+
+
+
+
+
+
+
+
+-- component footer:
+$common.social list socials:
+string copyright:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+background.solid: $inherited.colors.background.base
+padding-vertical.px: 32
+padding-horizontal.px if { ftd.device == "mobile" }: 26
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: $common.max-width
+spacing: space-between
+
+-- ftd.row:
+spacing.fixed.px: 18
+
+-- ftd.image:
+$loop$: $footer.socials as $obj
+background.solid: $inherited.colors.background.step-2
+width.fixed.px: 18
+height.fixed.px: 18
+src: $obj.icon
+link: $obj.link
+
+-- end: ftd.row
+
+-- ftd.text: $footer.copyright
+role: $inherited.types.label-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: footer
+
+
+
+
+
+
+
+
+
+
+-- component skills:
+optional caption title:
+optional string tag:
+common.language list languages:
+common.achievement list achievements:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+background.solid: $inherited.colors.background.base
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $common.max-width
+
+-- ftd.text: $skills.title
+if: { skills.title != NULL }
+role: $inherited.types.heading-large
+color: $inherited.colors.text
+style: bold
+
+-- ftd.column:
+width.fixed.px: 100
+height.fixed.px: 2
+background.solid: $inherited.colors.border-strong
+margin-top.px: 10
+margin-top.px if { ftd.device == "mobile" }: 20
+
+-- end: ftd.column
+
+-- ftd.text: $skills.tag
+if: { skills.tag != NULL }
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-top.px: 20
+margin-top.px if { ftd.device == "mobile" }: 30
+text-align if { ftd.device == "mobile" }: center
+
+-- ftd.row:
+width: fill-container
+margin-top.px: 40
+spacing.fixed.px: 40
+wrap: true
+
+-- ftd.row:
+width.fixed.percent: 50
+width if { ftd.device == "mobile" }: fill-container
+spacing.fixed.px: 18
+wrap: true
+
+-- button-solid: $obj.title
+$loop$: $skills.languages as $obj
+cta-link: index.html
+
+-- end: ftd.row
+
+-- ftd.row:
+width.fixed.percent: 42.5
+width if { ftd.device == "mobile" }: fill-container
+spacing.fixed.px: 32
+spacing.fixed.px if { ftd.device == "mobile" }: 10
+wrap: true
+
+-- achievement-card: $obj.title
+$loop$: $skills.achievements as $obj
+icon: $obj.icon
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: skills
+
+
+
+
+
+
+
+
+
+
+-- component achievement-card:
+caption title:
+ftd.image-src icon:
+
+-- ftd.row:
+padding-vertical.px: 20
+padding-horizontal.px: 12
+border-radius.px: 5
+border-color: $inherited.colors.border
+border-width.px: 2
+background.solid: $inherited.colors.background.step-2
+spacing.fixed.px: 10
+width.fixed.px: 220
+width.fixed.px if { ftd.device == "mobile" }: 160
+align-content: center
+wrap: true
+
+-- ftd.image: 
+src: $achievement-card.icon
+align-self: center
+
+-- ftd.text: $achievement-card.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+max-width.fixed.px: 120
+text-align if { ftd.device == "mobile" }: center
+style: bold 
+
+-- end: ftd.row
+ 
+-- end: achievement-card

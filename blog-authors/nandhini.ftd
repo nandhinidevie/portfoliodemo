@@ -1,0 +1,22 @@
+
+
+
+
+
+-- self-common.author-meta nandhini: Nandhini
+profile: Copywriter
+bio-url: index.html
+image: $self-assets.files.assets.profile-picture.jpeg
+company: Copy for Impact
+
+Freelance copywriter for sustainable businesses.
+
+
+
+
+-- pf.page:
+
+-- self-common.author-bio:
+author: $nandhini
+
+-- end: pf.page
